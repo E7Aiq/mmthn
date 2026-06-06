@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="الأسئلة الشائعة — ممتهن">
+  <title>الأسئلة الشائعة — ممتهن</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=IBM+Plex+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/faq.css">
+</head>
+<body>
+
+  <nav class="nav is-scrolled" role="navigation" aria-label="القائمة الرئيسية">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="assets/logo-inverse.svg" alt="ممتهن" width="140" height="40"></a>
+      <div class="nav__links">
+        <a href="graduates.html" class="nav__link">الخريجون</a>
+        <a href="startups.html" class="nav__link">الشركات</a>
+        <a href="experts.html" class="nav__link">الخبراء</a>
+        <a href="paths.html" class="nav__link">المسارات</a>
+        <a href="about.html" class="nav__link">عن ممتهن</a>
+      </div>
+      <div class="nav__actions">
+        <a href="graduates.html#apply" class="btn btn-pill btn-sm">سجّل اهتمامك</a>
+        <button class="nav__toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__overlay" aria-hidden="true">
+    <a href="graduates.html" class="nav__overlay-link">الخريجون</a>
+    <a href="startups.html" class="nav__overlay-link">الشركات</a>
+    <a href="experts.html" class="nav__overlay-link">الخبراء</a>
+    <a href="paths.html" class="nav__overlay-link">المسارات</a>
+    <a href="about.html" class="nav__overlay-link">عن ممتهن</a>
+  </div>
+
+  <main>
+    <section class="page-hero page-hero--graduates">
+      <div class="container" style="text-align: center">
+        <p class="section-label">مساعدة</p>
+        <h1 class="page-hero__title fade-up">الأسئلة الشائعة</h1>
+        <p class="page-hero__subtitle fade-up" style="margin-inline: auto">كل ما تحتاج تعرفه عن ممتهن — للخريجين، الشركات، والخبراء.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-block-start: 0">
+      <div class="container">
+        <div class="faq-search fade-up">
+          <i class="ph ph-magnifying-glass faq-search__icon"></i>
+          <input class="faq-search__input" type="search" id="faq-search" placeholder="ابحث في الأسئلة..." aria-label="بحث في الأسئلة الشائعة">
+        </div>
+
+        <div class="faq-categories fade-up" id="faq-categories" role="group" aria-label="تصفية حسب الفئة"></div>
+
+        <div class="faq-list accordion fade-up" id="faq-list" aria-live="polite"></div>
+
+        <div class="faq-no-results" id="faq-no-results">
+          <i class="ph ph-magnifying-glass" style="font-size: 2rem; margin-block-end: 1rem; display: block"></i>
+          <p>لم نجد أسئلة تطابق بحثك. جرّب كلمات مختلفة أو <a href="graduates.html#apply" style="color: var(--color-lime)">تواصل معنا</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--lime">
+      <div class="container" style="text-align: center">
+        <h2 class="cta-banner__title fade-up">ما لقيت إجابتك؟</h2>
+        <a href="graduates.html#apply" class="btn btn-dark fade-up">تواصل معنا</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo-inverse.svg" alt="ممتهن" width="140" height="40" loading="lazy">
+          <p>جمعية غير ربحية تربط الخريجين بالشركات الناشئة.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="تويتر"><i class="ph ph-x-logo"></i></a>
+            <a href="#" aria-label="لينكدإن"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" aria-label="إنستغرام"><i class="ph ph-instagram-logo"></i></a>
+          </div>
+        </div>
+        <div><h4 class="footer__col-title">للخريجين</h4><a href="graduates.html" class="footer__link">كيف تنضم</a></div>
+        <div><h4 class="footer__col-title">للشركات</h4><a href="startups.html" class="footer__link">انضم كشريك</a></div>
+        <div><h4 class="footer__col-title">روابط سريعة</h4><a href="about.html" class="footer__link">عن ممتهن</a></div>
+      </div>
+      <div class="footer__bottom">© 2025 ممتهن | جمعية غير ربحية مرخّصة في المملكة العربية السعودية</div>
+    </div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
+  <script defer src="js/faq.js"></script>
+</body>
+</html>

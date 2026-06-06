@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="للخبراء — شارك خبرتك واصنع جيلاً مهنياً سعودياً مع ممتهن">
+  <title>للخبراء — ممتهن</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=IBM+Plex+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/experts.css">
+</head>
+<body>
+
+  <nav class="nav is-scrolled" role="navigation" aria-label="القائمة الرئيسية">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="assets/logo-inverse.svg" alt="ممتهن" width="140" height="40"></a>
+      <div class="nav__links">
+        <a href="graduates.html" class="nav__link">الخريجون</a>
+        <a href="startups.html" class="nav__link">الشركات</a>
+        <a href="experts.html" class="nav__link is-active">الخبراء</a>
+        <a href="paths.html" class="nav__link">المسارات</a>
+        <a href="about.html" class="nav__link">عن ممتهن</a>
+      </div>
+      <div class="nav__actions">
+        <a href="#apply" class="btn btn-pill btn-sm">قدّم كخبير</a>
+        <button class="nav__toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__overlay" aria-hidden="true">
+    <a href="graduates.html" class="nav__overlay-link">الخريجون</a>
+    <a href="startups.html" class="nav__overlay-link">الشركات</a>
+    <a href="experts.html" class="nav__overlay-link">الخبراء</a>
+    <a href="paths.html" class="nav__overlay-link">المسارات</a>
+    <a href="about.html" class="nav__overlay-link">عن ممتهن</a>
+  </div>
+
+  <main>
+    <section class="page-hero page-hero--graduates">
+      <div class="container">
+        <p class="section-label">للخبراء</p>
+        <h1 class="page-hero__title fade-up">شارك خبرتك، <span class="text-lime">اصنع جيلاً</span></h1>
+        <p class="page-hero__subtitle fade-up">ساعتان أسبوعياً من وقتك تغيّر مسار خريج — وتبني شبكة مع جيل المستقبل.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-label fade-up">ما المطلوب؟</p>
+        <h2 class="section-title fade-up">التزام بسيط — أثر كبير</h2>
+        <div class="commitment-grid stagger-children">
+          <div class="commitment-card fade-up" style="--i: 0">
+            <div class="commitment-card__value">٢-٣</div>
+            <div class="commitment-card__label">ساعات أسبوعياً</div>
+            <p class="commitment-card__desc">جلسة إرشاد ٤٥ دقيقة + مراجعة تقرير ٣٠ دقيقة</p>
+          </div>
+          <div class="commitment-card fade-up" style="--i: 1">
+            <div class="commitment-card__value">عن بُعد</div>
+            <div class="commitment-card__label">الصيغة الافتراضية</div>
+            <p class="commitment-card__desc">Zoom أو Google Meet — حضوري في الرياض عند الحاجة</p>
+          </div>
+          <div class="commitment-card fade-up" style="--i: 2">
+            <div class="commitment-card__value">١-٣</div>
+            <div class="commitment-card__label">متدرب لكل خبير</div>
+            <p class="commitment-card__desc">تركيز على جودة الإرشاد — مو كمية</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--color-surface)">
+      <div class="container">
+        <p class="section-label fade-up">خبراؤنا</p>
+        <h2 class="section-title fade-up">نخبة من المحترفين السعوديين</h2>
+        <div class="expert-profiles stagger-children">
+          <div class="expert-card fade-up" style="--i: 0">
+            <div class="expert-card__avatar" style="background: var(--path-data)">خ</div>
+            <h3 class="expert-card__name">خالد المنصور</h3>
+            <p class="expert-card__specialty">تحليل بيانات وذكاء اصطناعي</p>
+            <p class="expert-card__company">مدير بيانات · شركة تقنية كبرى</p>
+            <a href="#" class="expert-card__linkedin" aria-label="لينكدإن خالد المنصور"><i class="ph ph-linkedin-logo"></i></a>
+          </div>
+          <div class="expert-card fade-up" style="--i: 1">
+            <div class="expert-card__avatar" style="background: var(--path-dev)">س</div>
+            <h3 class="expert-card__name">سارة البقمي</h3>
+            <p class="expert-card__specialty">تطوير برمجيات ومنتج</p>
+            <p class="expert-card__company">مهندسة برمجيات أولى · SaaS</p>
+            <a href="#" class="expert-card__linkedin" aria-label="لينكدإن سارة البقمي"><i class="ph ph-linkedin-logo"></i></a>
+          </div>
+          <div class="expert-card fade-up" style="--i: 2">
+            <div class="expert-card__avatar" style="background: var(--path-marketing)">أ</div>
+            <h3 class="expert-card__name">أحمد الغامدي</h3>
+            <p class="expert-card__specialty">تسويق رقمي ومحتوى</p>
+            <p class="expert-card__company">مدير تسويق · وكالة رقمية</p>
+            <a href="#" class="expert-card__linkedin" aria-label="لينكدإن أحمد الغامدي"><i class="ph ph-linkedin-logo"></i></a>
+          </div>
+          <div class="expert-card fade-up" style="--i: 3">
+            <div class="expert-card__avatar" style="background: var(--path-ux)">ل</div>
+            <h3 class="expert-card__name">لمى الحربي</h3>
+            <p class="expert-card__specialty">تصميم تجربة المستخدم</p>
+            <p class="expert-card__company">قائدة تصميم UX · FinTech</p>
+            <a href="#" class="expert-card__linkedin" aria-label="لينكدإن لمى الحربي"><i class="ph ph-linkedin-logo"></i></a>
+          </div>
+          <div class="expert-card fade-up" style="--i: 4">
+            <div class="expert-card__avatar" style="background: var(--path-ops)">ف</div>
+            <h3 class="expert-card__name">فهد العتيبي</h3>
+            <p class="expert-card__specialty">إدارة مشاريع وعمليات</p>
+            <p class="expert-card__company">مدير عمليات · شركة لوجستية</p>
+            <a href="#" class="expert-card__linkedin" aria-label="لينكدإن فهد العتيبي"><i class="ph ph-linkedin-logo"></i></a>
+          </div>
+          <div class="expert-card fade-up" style="--i: 5">
+            <div class="expert-card__avatar" style="background: var(--path-data)">م</div>
+            <h3 class="expert-card__name">منى الشهري</h3>
+            <p class="expert-card__specialty">ذكاء اصطناعي وتعلّم آلي</p>
+            <p class="expert-card__company">باحثة AI · جامعة سعودية</p>
+            <a href="#" class="expert-card__linkedin" aria-label="لينكدإن منى الشهري"><i class="ph ph-linkedin-logo"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apply">
+      <div class="container">
+        <p class="section-label fade-up">التقديم</p>
+        <h2 class="section-title fade-up" style="text-align: center">قدّم كخبير</h2>
+        <div class="expert-form fade-up" id="expert-form">
+          <div class="form-steps">
+            <div class="form-step-indicator is-active" data-step="0"></div>
+            <div class="form-step-indicator" data-step="1"></div>
+            <div class="form-step-indicator" data-step="2"></div>
+          </div>
+
+          <div class="form-step is-active" data-step="0">
+            <div class="form-group">
+              <label class="form-label" for="expert-name">الاسم الكامل</label>
+              <input class="form-input" type="text" id="expert-name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="expert-email">البريد الإلكتروني</label>
+              <input class="form-input" type="email" id="expert-email" required>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="1">
+            <div class="form-group">
+              <label class="form-label" for="expert-specialty">التخصص</label>
+              <select class="form-select" id="expert-specialty" required>
+                <option value="">— اختر المسار —</option>
+                <option>تحليل البيانات والذكاء الاصطناعي</option>
+                <option>تطوير البرمجيات والمنتج</option>
+                <option>التسويق الرقمي والمحتوى</option>
+                <option>تصميم تجربة المستخدم</option>
+                <option>إدارة المشاريع والعمليات</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="expert-company">الشركة الحالية</label>
+              <input class="form-input" type="text" id="expert-company" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="expert-exp">سنوات الخبرة</label>
+              <select class="form-select" id="expert-exp" required>
+                <option value="">— اختر —</option>
+                <option>٥-٧ سنوات</option>
+                <option>٨-١٠ سنوات</option>
+                <option>١٠+ سنوات</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="2">
+            <div class="form-group">
+              <label class="form-label" for="expert-linkedin">رابط LinkedIn</label>
+              <input class="form-input" type="url" id="expert-linkedin" placeholder="https://linkedin.com/in/...">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="expert-motivation">لماذا تريد الانضمام؟</label>
+              <textarea class="form-textarea" id="expert-motivation" required placeholder="شاركنا دافعك..."></textarea>
+            </div>
+          </div>
+
+          <div class="form-nav">
+            <button class="btn btn-secondary" id="prev-step" type="button" style="visibility: hidden">السابق</button>
+            <button class="btn btn-primary" id="next-step" type="button">التالي</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo-inverse.svg" alt="ممتهن" width="140" height="40" loading="lazy">
+          <p>جمعية غير ربحية تربط الخريجين بالشركات الناشئة.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="تويتر"><i class="ph ph-x-logo"></i></a>
+            <a href="#" aria-label="لينكدإن"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" aria-label="إنستغرام"><i class="ph ph-instagram-logo"></i></a>
+          </div>
+        </div>
+        <div><h4 class="footer__col-title">للخريجين</h4><a href="graduates.html" class="footer__link">كيف تنضم</a></div>
+        <div><h4 class="footer__col-title">للشركات</h4><a href="startups.html" class="footer__link">انضم كشريك</a></div>
+        <div><h4 class="footer__col-title">روابط سريعة</h4><a href="about.html" class="footer__link">عن ممتهن</a><a href="faq.html" class="footer__link">الأسئلة الشائعة</a></div>
+      </div>
+      <div class="footer__bottom">© 2025 ممتهن | جمعية غير ربحية مرخّصة في المملكة العربية السعودية</div>
+    </div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
+  <script defer src="js/experts.js"></script>
+</body>
+</html>

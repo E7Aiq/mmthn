@@ -1,0 +1,211 @@
+.page-hero {
+  padding-block: calc(var(--nav-height) + var(--space-3xl)) var(--space-3xl);
+  background: var(--color-slate);
+  color: var(--color-parchment);
+}
+
+.page-hero__title {
+  font-size: var(--text-4xl);
+  max-width: 700px;
+}
+
+.page-hero__subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-fog);
+  margin-block-start: var(--space-md);
+  max-width: 560px;
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .mission-vision {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.mv-block {
+  padding: var(--space-2xl);
+  background: var(--color-surface);
+  border: 1px solid var(--color-mist);
+  border-radius: var(--radius-md);
+}
+
+.mv-block__label {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-lime);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-block-end: var(--space-md);
+}
+
+.mv-block__text {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.story-text {
+  max-width: 720px;
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--color-text-muted);
+}
+
+.story-text p {
+  margin-block-end: var(--space-lg);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.team-card {
+  text-align: center;
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-mist);
+  border-radius: var(--radius-md);
+}
+
+.team-card__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--color-slate);
+  color: var(--color-lime);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-inline: auto;
+  margin-block-end: var(--space-md);
+}
+
+.team-card__name {
+  font-weight: 700;
+  margin-block-end: var(--space-xs);
+}
+
+.team-card__role {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* Milestones */
+.milestones {
+  position: relative;
+  padding-inline-start: var(--space-xl);
+}
+
+.milestones::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-lime);
+}
+
+.milestone {
+  position: relative;
+  padding-block-end: var(--space-2xl);
+  padding-inline-start: var(--space-xl);
+}
+
+.milestone::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: calc(-1 * var(--space-xl) - 5px);
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: var(--color-lime);
+  border-radius: 50%;
+  border: 2px solid var(--color-bg);
+}
+
+.milestone__year {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--text-lg);
+  color: var(--color-lime);
+  margin-block-end: var(--space-xs);
+}
+
+.milestone__text {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+}
+
+.press-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  align-items: center;
+  justify-content: center;
+}
+
+.press-logo {
+  padding: var(--space-md) var(--space-xl);
+  background: var(--color-surface);
+  border: 1px solid var(--color-mist);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .pillars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pillar-card {
+  padding: var(--space-xl);
+  background: rgba(198, 241, 53, 0.05);
+  border: 1px solid rgba(198, 241, 53, 0.2);
+  border-radius: var(--radius-md);
+}
+
+.pillar-card__title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  margin-block-end: var(--space-md);
+  color: var(--color-lime);
+}
+
+.pillar-card__text {
+  font-size: var(--text-sm);
+  color: var(--color-fog);
+  line-height: 1.7;
+}

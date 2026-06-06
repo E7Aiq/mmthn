@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="للخريجين — ابنِ مسيرتك المهنية من اليوم الأول مع ممتهن">
+  <title>للخريجين — ممتهن</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=IBM+Plex+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/graduates.css">
+</head>
+<body>
+
+  <nav class="nav is-scrolled" role="navigation" aria-label="القائمة الرئيسية">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="assets/logo-inverse.svg" alt="ممتهن" width="140" height="40"></a>
+      <div class="nav__links">
+        <a href="graduates.html" class="nav__link is-active">الخريجون</a>
+        <a href="startups.html" class="nav__link">الشركات</a>
+        <a href="experts.html" class="nav__link">الخبراء</a>
+        <a href="paths.html" class="nav__link">المسارات</a>
+        <a href="about.html" class="nav__link">عن ممتهن</a>
+      </div>
+      <div class="nav__actions">
+        <a href="#apply" class="btn btn-pill btn-sm">سجّل اهتمامك</a>
+        <button class="nav__toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__overlay" aria-hidden="true">
+    <a href="graduates.html" class="nav__overlay-link">الخريجون</a>
+    <a href="startups.html" class="nav__overlay-link">الشركات</a>
+    <a href="experts.html" class="nav__overlay-link">الخبراء</a>
+    <a href="paths.html" class="nav__overlay-link">المسارات</a>
+    <a href="about.html" class="nav__overlay-link">عن ممتهن</a>
+    <a href="faq.html" class="nav__overlay-link">الأسئلة الشائعة</a>
+  </div>
+
+  <main>
+    <section class="page-hero page-hero--graduates">
+      <div class="container">
+        <p class="section-label">للخريجين</p>
+        <h1 class="page-hero__title fade-up">ابنِ مسيرتك المهنية من <span class="text-lime">اليوم الأول</span></h1>
+        <p class="page-hero__subtitle fade-up">خبرة حقيقية، إشراف خبير، شهادة موثّقة — بدون انتظار سنوات للحصول على «أول وظيفة».</p>
+        <a href="#apply" class="btn btn-primary fade-up" style="margin-block-start: 2rem">سجّل اهتمامك الآن</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-label fade-up">ماذا تحصل؟</p>
+        <h2 class="section-title fade-up">أربعة أشياء تغيّر مسارك</h2>
+        <div class="grid grid-4 stagger-children">
+          <div class="benefit-card fade-up" style="--i: 0">
+            <div class="benefit-card__icon"><i class="ph ph-folder-open"></i></div>
+            <h3 class="benefit-card__title">بورتفوليو موثّق</h3>
+            <p class="benefit-card__desc">مشاريع حقيقية أنجزتها في شركة ناشئة — مو تمارين أكاديمية</p>
+          </div>
+          <div class="benefit-card fade-up" style="--i: 1">
+            <div class="benefit-card__icon"><i class="ph ph-certificate"></i></div>
+            <h3 class="benefit-card__title">شهادة مسمى وظيفي</h3>
+            <p class="benefit-card__desc">شهادة رسمية بمسمى وظيفي وتقييم أداء من ممتهن والشركة</p>
+          </div>
+          <div class="benefit-card fade-up" style="--i: 2">
+            <div class="benefit-card__icon"><i class="ph ph-chalkboard-teacher"></i></div>
+            <h3 class="benefit-card__title">إشراف خبير</h3>
+            <p class="benefit-card__desc">جلسة إرشاد أسبوعية مع خبير في مجالك — ٢-٣ ساعات فقط</p>
+          </div>
+          <div class="benefit-card fade-up" style="--i: 3">
+            <div class="benefit-card__icon"><i class="ph ph-star"></i></div>
+            <h3 class="benefit-card__title">تقييم رسمي</h3>
+            <p class="benefit-card__desc">تقرير أداء مفصّل يوثّق مهاراتك وإنجازاتك — جاهز للعرض</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--color-surface)">
+      <div class="container">
+        <p class="section-label fade-up">أنواع العقود</p>
+        <h2 class="section-title fade-up">اختر المدة المناسبة لك</h2>
+        <div class="contract-cards stagger-children">
+          <div class="contract-card fade-up" style="--i: 0">
+            <div class="contract-card__duration">شهر</div>
+            <div class="contract-card__label">تجربة سريعة</div>
+            <ul class="contract-card__list">
+              <li>تعرّف على بيئة الشركات الناشئة</li>
+              <li>مشروع واحد موثّق في البورتفوليو</li>
+              <li>٤ جلسات إشراف مع الخبير</li>
+              <li>شهادة مشاركة</li>
+            </ul>
+          </div>
+          <div class="contract-card contract-card--featured fade-up" style="--i: 1">
+            <div class="contract-card__duration">٣ أشهر</div>
+            <div class="contract-card__label">المسار الأكثر شيوعاً</div>
+            <ul class="contract-card__list">
+              <li>خبرة عملية متكاملة في مسارك</li>
+              <li>٢-٣ مشاريع في البورتفوليو</li>
+              <li>١٢ جلسة إشراف مع الخبير</li>
+              <li>شهادة مسمى وظيفي رسمية</li>
+              <li>تقييم أداء مفصّل</li>
+            </ul>
+          </div>
+          <div class="contract-card fade-up" style="--i: 2">
+            <div class="contract-card__duration">٦ أشهر</div>
+            <div class="contract-card__label">مسار متعمّق</div>
+            <ul class="contract-card__list">
+              <li>إتقان المهارات الأساسية للمسار</li>
+              <li>٤+ مشاريع متنوعة</li>
+              <li>٢٤ جلسة إشراف مع الخبير</li>
+              <li>شهادة متقدمة + توصية توظيف</li>
+              <li>أولوية في المطابقة مع شركات أكبر</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skill-gap">
+      <div class="container">
+        <p class="section-label fade-up">أداة تفاعلية</p>
+        <h2 class="section-title fade-up">حلّل فجوة مهاراتك</h2>
+        <p class="text-muted fade-up" style="margin-block-end: 2rem; max-width: 560px">اعرف بالضبط إيش عندك وإيش تحتاج قبل ما تبدأ — وخذ روابط تعلّم لكل مهارة ناقصة.</p>
+        <div class="skill-gap-tool fade-up" id="skill-gap-tool"></div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--color-surface)">
+      <div class="container">
+        <p class="section-label fade-up">خطوات التقديم</p>
+        <h2 class="section-title fade-up">من التسجيل إلى الشهادة</h2>
+        <div class="app-timeline stagger-children">
+          <div class="app-timeline__step fade-up" style="--i: 0">
+            <div class="app-timeline__number">١</div>
+            <div class="app-timeline__title">تسجيل</div>
+            <p class="app-timeline__desc">عبّي نموذج الاهتمام — نتواصل معك خلال ٤٨ ساعة</p>
+          </div>
+          <div class="app-timeline__step fade-up" style="--i: 1">
+            <div class="app-timeline__number">٢</div>
+            <div class="app-timeline__title">اختيار مسار</div>
+            <p class="app-timeline__desc">نحدد معك المسار الأنسب بناءً على اهتماماتك ومهاراتك</p>
+          </div>
+          <div class="app-timeline__step fade-up" style="--i: 2">
+            <div class="app-timeline__number">٣</div>
+            <div class="app-timeline__title">مطابقة الشركة</div>
+            <p class="app-timeline__desc">نطابقك مع شركة ناشئة تناسب مسارك — خلال أسبوعين</p>
+          </div>
+          <div class="app-timeline__step fade-up" style="--i: 3">
+            <div class="app-timeline__number">٤</div>
+            <div class="app-timeline__title">بداية العمل</div>
+            <p class="app-timeline__desc">تبدأ العمل مع إشراف خبير أسبوعي من اليوم الأول</p>
+          </div>
+          <div class="app-timeline__step fade-up" style="--i: 4">
+            <div class="app-timeline__number">٥</div>
+            <div class="app-timeline__title">الشهادة</div>
+            <p class="app-timeline__desc">تحصل على شهادتك وتقييم أداءك بعد إتمام البرنامج</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apply">
+      <div class="container">
+        <p class="section-label fade-up">أسئلة شائعة</p>
+        <h2 class="section-title fade-up">للخريجين</h2>
+        <div class="accordion fade-up" style="max-width: 800px">
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">هل يجب أن أكون خريجاً حديثاً للانضمام؟<i class="ph ph-caret-down accordion__icon"></i></button>
+            <div class="accordion__panel"><p class="accordion__content">لا يشترط ذلك — نقبل من هم في آخر سنة دراسية أو من تخرجوا خلال السنتين الماضيتين دون خبرة عملية رسمية.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">هل العقد مدفوع الأجر؟<i class="ph ph-caret-down accordion__icon"></i></button>
+            <div class="accordion__panel"><p class="accordion__content">نعم، تحصل على راتب رمزي يغطي مصاريفك الأساسية خلال فترة التدريب. المبلغ يختلف حسب مدة العقد ونوع المسار.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">كم مدة البرنامج؟<i class="ph ph-caret-down accordion__icon"></i></button>
+            <div class="accordion__panel"><p class="accordion__content">نقدّم ثلاث خيارات: شهر واحد (تجربة سريعة)، ٣ أشهر (الأكثر شيوعاً)، أو ٦ أشهر (للمسارات المعقّدة).</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">هل أحصل على شهادة في النهاية؟<i class="ph ph-caret-down accordion__icon"></i></button>
+            <div class="accordion__panel"><p class="accordion__content">نعم — شهادة رسمية بمسمى وظيفي موثّق من ممتهن والشركة الناشئة، مع تقييم أداء مفصّل يُضاف لبورتفوليوك.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">ماذا لو لم أجد شركة مناسبة؟<i class="ph ph-caret-down accordion__icon"></i></button>
+            <div class="accordion__panel"><p class="accordion__content">فريق المطابقة يعمل معك حتى تجد الشركة المناسبة. متوسط وقت المطابقة أسبوعان، ونضمن لك فرصة تجربة واحدة على الأقل.</p></div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-block-start: 3rem">
+          <a href="faq.html" class="btn btn-secondary">المزيد من الأسئلة ←</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--lime">
+      <div class="container" style="text-align: center">
+        <h2 class="cta-banner__title fade-up">جاهز تبدأ؟</h2>
+        <a href="#" class="btn btn-dark fade-up" onclick="alert('شكراً! سيتواصل معك فريق ممتهن قريباً.'); return false;">سجّل اهتمامك</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo-inverse.svg" alt="ممتهن" width="140" height="40" loading="lazy">
+          <p>جمعية غير ربحية تربط الخريجين بالشركات الناشئة — من خريج إلى مهني.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="تويتر"><i class="ph ph-x-logo"></i></a>
+            <a href="#" aria-label="لينكدإن"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" aria-label="إنستغرام"><i class="ph ph-instagram-logo"></i></a>
+          </div>
+        </div>
+        <div><h4 class="footer__col-title">للخريجين</h4><a href="graduates.html" class="footer__link">كيف تنضم</a><a href="paths.html" class="footer__link">المسارات المهنية</a></div>
+        <div><h4 class="footer__col-title">للشركات</h4><a href="startups.html" class="footer__link">انضم كشريك</a><a href="startups.html#pricing" class="footer__link">الباقات</a></div>
+        <div><h4 class="footer__col-title">روابط سريعة</h4><a href="about.html" class="footer__link">عن ممتهن</a><a href="faq.html" class="footer__link">الأسئلة الشائعة</a></div>
+      </div>
+      <div class="footer__bottom">© 2025 ممتهن | جمعية غير ربحية مرخّصة في المملكة العربية السعودية</div>
+    </div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
+  <script defer src="js/skill-gap.js"></script>
+</body>
+</html>
