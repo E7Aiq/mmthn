@@ -4,6 +4,41 @@
   min-height: 90vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Atmospheric orbs */
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.hero::before {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(198, 241, 53, 0.12) 0%, transparent 70%);
+  inset-block-start: -120px;
+  inset-inline-end: -80px;
+  animation: orbFloat 8s ease-in-out infinite alternate;
+}
+
+.hero::after {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(232, 76, 30, 0.07) 0%, transparent 70%);
+  inset-block-end: -60px;
+  inset-inline-start: -60px;
+  animation: orbFloat 11s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes orbFloat {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(30px, -40px) scale(1.08); }
 }
 
 .hero__grid {
@@ -328,13 +363,12 @@
   font-size: var(--text-base);
   font-weight: 500;
   text-align: start;
-  transition: border-color 0.2s, transform 0.15s, background 0.2s;
+  transition: border-color 0.2s, background 0.2s;
 }
 
 .quiz-option:hover {
   border-color: var(--color-lime);
   background: var(--color-surface);
-  transform: translateY(-2px);
 }
 
 .quiz-result__title {

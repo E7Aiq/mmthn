@@ -5,22 +5,22 @@
     "nameEn": "Data & AI",
     "color": "#3B82F6",
     "icon": "chart-bar",
-    "description": "تعلّم كيف تحوّل البيانات الخام إلى قرارات ذكية باستخدام أدوات التحليل والذكاء الاصطناعي.",
-    "skills": ["Python", "SQL", "Power BI", "Machine Learning", "Excel"],
-    "jobTitles": ["محلل بيانات", "مهندس بيانات", "باحث ذكاء اصطناعي"],
-    "salaryRange": { "min": 8000, "max": 22000 },
+    "description": "تعلّم كيف تحوّل البيانات الخام إلى قرارات ذكية وتدعم استراتيجيات الشركات الناشئة باستخدام أدوات التحليل والذكاء الاصطناعي المساعدة.",
+    "skills": ["Excel متقدم", "SQL", "تحليل البيانات", "ذكاء اصطناعي توليدي", "أدوات عرض البيانات"],
+    "jobTitles": ["مساعد محلل بيانات", "منسق بيانات لوجستية/تسويقية"],
+    "salaryRange": { "min": 7000, "max": 15000 },
     "marketDemand": 5,
     "duration": [1, 3, 6],
     "resources": [
-      { "type": "course", "title": "Python for Everybody", "platform": "Coursera", "url": "https://coursera.org", "free": true },
-      { "type": "youtube", "title": "قناة عبدالله الغامدي - تحليل البيانات", "url": "https://youtube.com", "free": true },
-      { "type": "article", "title": "دليل المبتدئين في تحليل البيانات", "url": "https://example.com", "free": true }
+      { "type": "course", "title": "Google Data Analytics", "platform": "Coursera", "url": "https://coursera.org", "free": false },
+      { "type": "youtube", "title": "مبادئ تحليل البيانات باللغة العربية", "url": "https://youtube.com", "free": true },
+      { "type": "article", "title": "أهمية مهارات البيانات في سوق العمل السعودي 2026", "url": "https://example.com", "free": true }
     ],
     "thirtyDayPlan": [
-      { "week": 1, "task": "تعلّم أساسيات Python: متغيرات، حلقات، دوال" },
-      { "week": 2, "task": "استكشاف SQL وقواعد البيانات مع مشروع صغير" },
-      { "week": 3, "task": "تحليل مجموعة بيانات حقيقية باستخدام Pandas" },
-      { "week": 4, "task": "بناء لوحة بيانات بسيطة وعرضها كأول مشروع" }
+      { "week": 1, "task": "إتقان دوال Excel المتقدمة وتحليل الجداول المحورية" },
+      { "week": 2, "task": "تعلم أساسيات لغة الاستعلام SQL وتطبيقها على قواعد البيانات" },
+      { "week": 3, "task": "استخدام أدوات مثل Power BI أو Google Looker لبناء لوحة بيانات" },
+      { "week": 4, "task": "دمج أدوات الذكاء الاصطناعي في صياغة تقارير التحليل وعرض مشروعك" }
     ]
   },
   {
@@ -29,22 +29,22 @@
     "nameEn": "Software & Product",
     "color": "#8B5CF6",
     "icon": "code",
-    "description": "ابنِ منتجات رقمية من الفكرة إلى الإطلاق — تطوير ويب، تطبيقات، وإدارة منتج تقني.",
-    "skills": ["JavaScript", "React", "Git", "APIs", "Product Thinking"],
-    "jobTitles": ["مطوّر واجهات أمامية", "مطوّر خلفية", "مدير منتج تقني"],
-    "salaryRange": { "min": 9000, "max": 25000 },
+    "description": "ابنِ منتجات رقمية حقيقية تدعم تشغيل وأتمتة العمليات داخل الشركات الناشئة — من تصميم الصفحات إلى ربط الواجهات.",
+    "skills": ["JavaScript / Python", "أساسيات الويب HTML/CSS", "Git & GitHub", "REST APIs", "التفكير المنتجّي"],
+    "jobTitles": ["مطوّر واجهات أمامية مبتدئ", "مساعد مطور خلفيات البرامج"],
+    "salaryRange": { "min": 8000, "max": 16000 },
     "marketDemand": 5,
     "duration": [1, 3, 6],
     "resources": [
-      { "type": "course", "title": "The Complete Web Developer Bootcamp", "platform": "Udemy", "url": "https://udemy.com", "free": false },
-      { "type": "youtube", "title": "قناة Elzero Web School", "url": "https://youtube.com", "free": true },
-      { "type": "article", "title": "دليل Git للمبتدئين", "url": "https://example.com", "free": true }
+      { "type": "course", "title": "Introduction to Web Development", "platform": "Coursera", "url": "https://coursera.org", "free": true },
+      { "type": "youtube", "title": "قناة Elzero Web School للتعلم البرمجي", "url": "https://youtube.com", "free": true },
+      { "type": "article", "title": "كيف تبني سيرة برمجية قوية تتجاوز فلاتر الـ ATS", "url": "https://example.com", "free": true }
     ],
     "thirtyDayPlan": [
-      { "week": 1, "task": "أساسيات HTML, CSS, JavaScript" },
-      { "week": 2, "task": "بناء صفحة ويب تفاعلية بسيطة" },
-      { "week": 3, "task": "تعلّم React وإنشاء مكوّنات" },
-      { "week": 4, "task": "مشروع نهائي: تطبيق ويب كامل" }
+      { "week": 1, "task": "تعلم أساسيات HTML5 و CSS3 وبناء صفحة ويب متجاوبة" },
+      { "week": 2, "task": "فهم المنطق البرمجي للغة JavaScript وكيفية التفاعل مع العناصر" },
+      { "week": 3, "task": "تعلم رفع المشاريع على GitHub وفهم العمليات البرمجية و APIs" },
+      { "week": 4, "task": "بناء تطبيق ويب تجريبي متكامل يحل مشكلة تشغيلية حقيقية" }
     ]
   },
   {
@@ -53,22 +53,22 @@
     "nameEn": "Digital Marketing",
     "color": "#F59E0B",
     "icon": "megaphone",
-    "description": "صمّم حملات تسويقية، أنشئ محتوى جذّاب، وابنِ حضوراً رقمياً يحقق نتائج.",
-    "skills": ["SEO", "Social Media", "Content Writing", "Google Ads", "Analytics"],
-    "jobTitles": ["أخصائي تسويق رقمي", "مدير محتوى", "أخصائي SEO"],
-    "salaryRange": { "min": 6000, "max": 18000 },
+    "description": "صمّم حملات تسويقية ووسائل ترويج رقمية، واكتب محتوى تفاعلياً يجذب العملاء ويساعد الشركة الناشئة على النمو الفعلي.",
+    "skills": ["كتابة المحتوى الإبداعي", "إدارة قنوات التواصل", "إعلانات منصات التواصل", "Google Analytics", "أساسيات SEO"],
+    "jobTitles": ["أخصائي تسويق رقمي مبتدئ", "منسق صناعة محتوى"],
+    "salaryRange": { "min": 6000, "max": 12000 },
     "marketDemand": 4,
     "duration": [1, 3, 6],
     "resources": [
-      { "type": "course", "title": "Google Digital Garage", "platform": "Google", "url": "https://learndigital.withgoogle.com", "free": true },
-      { "type": "youtube", "title": "قناة أحمد الغامدي - التسويق الرقمي", "url": "https://youtube.com", "free": true },
-      { "type": "article", "title": "دليل SEO للسوق السعودي", "url": "https://example.com", "free": true }
+      { "type": "course", "title": "Google Digital Marketing Certificate", "platform": "Coursera", "url": "https://coursera.org", "free": false },
+      { "type": "youtube", "title": "صناعة المحتوى والتسويق للمشاريع الناشئة", "url": "https://youtube.com", "free": true },
+      { "type": "article", "title": "دليل كتابة المحتوى المتوافق مع محركات البحث SEO بالسعودية", "url": "https://example.com", "free": true }
     ],
     "thirtyDayPlan": [
-      { "week": 1, "task": "فهم أساسيات التسويق الرقمي وتحليل الجمهور" },
-      { "week": 2, "task": "إنشاء استراتيجية محتوى لعلامة تجارية" },
-      { "week": 3, "task": "تشغيل حملة إعلانية على منصة واحدة" },
-      { "week": 4, "task": "تحليل النتائج وإعداد تقرير أداء" }
+      { "week": 1, "task": "فهم الجمهور المستهدف وصياغة نبرة براند واضحة للشركة" },
+      { "week": 2, "task": "تعلم جدولة المحتوى وصياغة خطط النشر الرقمية على الشبكات" },
+      { "week": 3, "task": "فهم إعلانات الميتا وإعلانات التيك توك وقراءة تحليلات الأداء" },
+      { "week": 4, "task": "إعداد تقرير أداء متكامل لحملة إعلانية حقيقية وعرض التوصيات" }
     ]
   },
   {
@@ -77,22 +77,22 @@
     "nameEn": "UX Design",
     "color": "#EC4899",
     "icon": "pen-nib",
-    "description": "صمّم تجارب رقمية سهلة وجميلة — من البحث عن المستخدم إلى النماذج الأولية.",
-    "skills": ["Figma", "User Research", "Wireframing", "Prototyping", "Usability Testing"],
-    "jobTitles": ["مصمّم UX", "مصمّم UI", "باحث تجربة مستخدم"],
-    "salaryRange": { "min": 7000, "max": 20000 },
+    "description": "افهم سلوك واحتياجات المستخدمين لتقوم برسم وتصميم واجهات وتدفقات تطبيقات ومواقع مميزة وسهلة الاستخدام.",
+    "skills": ["برنامج Figma", "بحوث المستخدمين", "هيكلة المعلومات", "تصميم النماذج الأولية", "اختبار قابلية الاستخدام"],
+    "jobTitles": ["مصمّم واجهات مستخدم UI مبتدئ", "مساعد باحث تجربة مستخدم UX"],
+    "salaryRange": { "min": 6500, "max": 13000 },
     "marketDemand": 4,
     "duration": [1, 3, 6],
     "resources": [
       { "type": "course", "title": "Google UX Design Certificate", "platform": "Coursera", "url": "https://coursera.org", "free": false },
-      { "type": "youtube", "title": "قناة AJ&Smart - UX Design", "url": "https://youtube.com", "free": true },
-      { "type": "article", "title": "مبادئ تصميم تجربة المستخدم", "url": "https://example.com", "free": true }
+      { "type": "youtube", "title": "دروس Figma وتصميم الواجهات الاحترافي", "url": "https://youtube.com", "free": true },
+      { "type": "article", "title": "خطوات تصميم تجربة مستخدم فعالة للمتاجر الإلكترونية", "url": "https://example.com", "free": true }
     ],
     "thirtyDayPlan": [
-      { "week": 1, "task": "تعلّم أساسيات UX وإجراء بحث مستخدم بسيط" },
-      { "week": 2, "task": "إنشاء wireframes لتطبيق أو موقع" },
-      { "week": 3, "task": "بناء نموذج أولي تفاعلي في Figma" },
-      { "week": 4, "task": "اختبار قابلية الاستخدام وتحسين التصميم" }
+      { "week": 1, "task": "تعلم أساسيات Figma ورسم الإطارات السلكية Wireframes" },
+      { "week": 2, "task": "دراسة تجارب المستخدمين وعمل استطلاعات لفهم المشاكل الشائعة" },
+      { "week": 3, "task": "تصميم نموذج أولي تفاعلي عالي الدقة Prototype" },
+      { "week": 4, "task": "إجراء جلسة اختبار حقيقية لسهولة الاستخدام مع مستفيدين وتعديل التصميم" }
     ]
   },
   {
@@ -101,22 +101,46 @@
     "nameEn": "Project & Operations",
     "color": "#10B981",
     "icon": "kanban",
-    "description": "نظّم المشاريع، حسّن العمليات، وكن الجسر بين الفرق والأهداف الاستراتيجية.",
-    "skills": ["Agile", "Scrum", "Project Management", "Process Optimization", "Stakeholder Management"],
-    "jobTitles": ["مدير مشاريع", "محلل عمليات", "منسّق مشاريع"],
-    "salaryRange": { "min": 7000, "max": 19000 },
+    "description": "سهم في تنظيم فرق العمل بالشركات الناشئة، وتتبع خطط التنفيذ، وتحسين سرعة وكفاءة العمليات اليومية.",
+    "skills": ["منهجيات العمل المرنة Agile", "أدوات إدارة المشاريع Jira/Trello", "تنسيق المهام والمتابعة", "التواصل مع أصحاب المصلحة", "توثيق الإجراءات"],
+    "jobTitles": ["منسّق مشاريع وإجراءات", "مساعد عمليات تشغيلية"],
+    "salaryRange": { "min": 6000, "max": 12000 },
     "marketDemand": 4,
     "duration": [1, 3, 6],
     "resources": [
-      { "type": "course", "title": "Google Project Management Certificate", "platform": "Coursera", "url": "https://coursera.org", "free": false },
-      { "type": "youtube", "title": "قناة Project Management Institute", "url": "https://youtube.com", "free": true },
-      { "type": "article", "title": "دليل Agile للمبتدئين", "url": "https://example.com", "free": true }
+      { "type": "course", "title": "Google Project Management", "platform": "Coursera", "url": "https://coursera.org", "free": false },
+      { "type": "youtube", "title": "شرح إدارة المشاريع وتطبيق Agile للمبتدئين", "url": "https://youtube.com", "free": true },
+      { "type": "article", "title": "كيف تنظم مهام فريق العمل عن بعد بإنتاجية عالية", "url": "https://example.com", "free": true }
     ],
     "thirtyDayPlan": [
-      { "week": 1, "task": "فهم منهجيات Agile وScrum" },
-      { "week": 2, "task": "إنشاء خطة مشروع وتقسيم المهام" },
-      { "week": 3, "task": "إدارة سبرنت تجريبي مع فريق وهمي" },
-      { "week": 4, "task": "تحليل العمليات واقتراح تحسينات" }
+      { "week": 1, "task": "تعلم أساسيات تخطيط المشاريع وتقسيم العمل لمهام فرعية" },
+      { "week": 2, "task": "تنظيم لوحات المهام وتجربة تطبيق Scrum مع محاكاة" },
+      { "week": 3, "task": "كتابة وتوثيق أدلة العمل التشغيلية القياسية SOPs للشركة" },
+      { "week": 4, "task": "متابعة تسليمات مشروع وإعداد تقرير الأداء الختامي" }
+    ]
+  },
+  {
+    "id": "procurement-supply",
+    "nameAr": "المشتريات وسلاسل الإمداد",
+    "nameEn": "Procurement & Supply Chain",
+    "color": "#14B8A6",
+    "icon": "truck",
+    "description": "ركّز على أنشطة الشراء والتفاوض اللوجستي وإدارة المخزون، مستفيداً من قرار التوطين الإداري بنسبة 70% والمركز اللوجستي المتسارع بالمنطقة الشرقية.",
+    "skills": ["سلاسل الإمداد", "إدارة المخازن والمستودعات", "عقود وتأهيل الموردين", "مهارات التفاوض", "Excel متقدم للوجستيات"],
+    "jobTitles": ["أخصائي مشتريات مبتدئ", "منسّق لوجستي وإمداد"],
+    "salaryRange": { "min": 7000, "max": 14000 },
+    "marketDemand": 5,
+    "duration": [1, 3, 6],
+    "resources": [
+      { "type": "course", "title": "Supply Chain Principles", "platform": "Coursera", "url": "https://coursera.org", "free": false },
+      { "type": "youtube", "title": "مبادئ سلاسل الإمداد والمشتريات بالسوق السعودي", "url": "https://youtube.com", "free": true },
+      { "type": "article", "title": "دور المنطقة الشرقية كعصب لوجستي وطني ورؤية 2030", "url": "https://example.com", "free": true }
+    ],
+    "thirtyDayPlan": [
+      { "week": 1, "task": "فهم هيكل المشتريات وإدارة الطلب وحساب كلفة المخزون الأساسية" },
+      { "week": 2, "task": "تعلم مهارات تأهيل الموردين والتفاوض وطلب عروض الأسعار RFQs" },
+      { "week": 3, "task": "فهم إجراءات الشحن والتخليص والتنسيق اللوجستي مع شركات النقل" },
+      { "week": 4, "task": "تنفيذ محاكاة عملية لشراء وتوريد مستلزمات تشغيلية وتقدير الكفاءة" }
     ]
   }
 ]

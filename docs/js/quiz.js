@@ -3,34 +3,35 @@ const QUIZ_PATHS = {
   dev: { nameAr: 'تطوير البرمجيات والمنتج', nameEn: 'Software & Product', color: '#8B5CF6' },
   marketing: { nameAr: 'التسويق الرقمي والمحتوى', nameEn: 'Digital Marketing', color: '#F59E0B' },
   ux: { nameAr: 'تصميم تجربة المستخدم', nameEn: 'UX Design', color: '#EC4899' },
-  ops: { nameAr: 'إدارة المشاريع والعمليات', nameEn: 'Project & Operations', color: '#10B981' }
+  ops: { nameAr: 'إدارة المشاريع والعمليات', nameEn: 'Project & Operations', color: '#10B981' },
+  procurement: { nameAr: 'المشتريات وسلاسل الإمداد', nameEn: 'Procurement & Supply Chain', color: '#14B8A6' }
 };
 
 const QUIZ_OPTIONS = {
   q1: [
-    { text: 'تحليل أرقام وإيجاد أنماط', scores: { data: 3, dev: 1 } },
-    { text: 'بناء منتج أو أداة تقنية', scores: { dev: 3, data: 1 } },
-    { text: 'إقناع الآخرين والتواصل', scores: { marketing: 3, ops: 1 } },
-    { text: 'تصميم تجربة جميلة وواضحة', scores: { ux: 3, marketing: 1 } }
+    { text: 'تحليل أرقام وإيجاد أنماط وحلول عملية', scores: { data: 3, procurement: 1 } },
+    { text: 'بناء منتجات أو أدوات تقنية متكاملة', scores: { dev: 3, ux: 1 } },
+    { text: 'إقناع الآخرين، التواصل والتفاوض الفعال', scores: { marketing: 3, procurement: 2 } },
+    { text: 'تنظيم الأعمال والترتيب التشغيلي للمهام', scores: { ops: 3, procurement: 2 } }
   ],
   q2: [
-    { text: 'مشاريع تعتمد على البيانات والتحليل', scores: { data: 3, ops: 1 } },
-    { text: 'بناء تطبيقات ومواقع إلكترونية', scores: { dev: 3, ux: 1 } },
-    { text: 'حملات تسويقية وحضور رقمي', scores: { marketing: 3, ux: 1 } },
-    { text: 'تحسين تجربة المستخدم والواجهات', scores: { ux: 3, dev: 1 } }
+    { text: 'مشاريع تعتمد على تحليل البيانات والأرقام', scores: { data: 3, ops: 1 } },
+    { text: 'بناء مواقع وتطبيقات تفاعلية متكاملة', scores: { dev: 3, ux: 1 } },
+    { text: 'حملات تسويقية وتنسيق حضور رقمي جذاب', scores: { marketing: 3, ux: 1 } },
+    { text: 'إدارة المخازن والمشتريات وتنسيق سلاسل الإمداد', scores: { procurement: 3, ops: 2 } }
   ],
   q3: [
-    { text: 'بشكل مستقل مع تحليل عميق', scores: { data: 2, dev: 2 } },
-    { text: 'ضمن فريق تقني متكامل', scores: { dev: 3, ops: 1 } },
-    { text: 'مع جمهور وعملاء مباشرة', scores: { marketing: 3, ux: 1 } },
-    { text: 'تنظيم وتنسيق بين الفرق', scores: { ops: 3, marketing: 1 } }
+    { text: 'بشكل مستقل مع إجراء أبحاث وتحليلات دقيقة', scores: { data: 2, dev: 2 } },
+    { text: 'ضمن فريق عمل برمجيات أو منتجات تقنية', scores: { dev: 3, ops: 1 } },
+    { text: 'مع عملاء وجماهير وموردين بشكل مباشر', scores: { marketing: 3, procurement: 2 } },
+    { text: 'التفاوض وإدارة العمليات اللوجستية وتوزيع المهام', scores: { procurement: 3, ops: 2 } }
   ]
 };
 
 const QUIZ_QUESTIONS = [
-  { id: 'q1', text: 'في وقت الفراغ، أيهم يصف تفكيرك أكثر؟' },
-  { id: 'q2', text: 'ما نوع المشاريع التي تجذبك أكثر؟' },
-  { id: 'q3', text: 'كيف تفضّل العمل؟' }
+  { id: 'q1', text: 'عند التفكير في مجال عملك المفضل، أيهم يصف شغفك أكثر؟' },
+  { id: 'q2', text: 'ما نوع المهام والمشاريع التي تجذبك للعمل عليها؟' },
+  { id: 'q3', text: 'كيف تفضّل المساهمة ضمن بيئة الشركة الناشئة؟' }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -38,9 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!quizEl) return;
 
   let currentQ = 0;
-  const scores = { data: 0, dev: 0, marketing: 0, ux: 0, ops: 0 };
+  const scores = { data: 0, dev: 0, marketing: 0, ux: 0, ops: 0, procurement: 0 };
 
-  const saved = localStorage.getItem('mumtahan_path_result');
+  const saved = localStorage.getItem('momthn_path_result');
   if (saved) {
     try {
       const result = JSON.parse(saved);
@@ -101,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function showResult(topPaths) {
-    localStorage.setItem('mumtahan_path_result', JSON.stringify({ topPaths, date: Date.now() }));
+    localStorage.setItem('momthn_path_result', JSON.stringify({ topPaths, date: Date.now() }));
 
     const cards = topPaths.map((key, i) => {
       const path = QUIZ_PATHS[key];
@@ -130,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('quiz-retry')?.addEventListener('click', () => {
-      localStorage.removeItem('mumtahan_path_result');
+      localStorage.removeItem('momthn_path_result');
       currentQ = 0;
       Object.keys(scores).forEach(k => scores[k] = 0);
       renderQuestion();

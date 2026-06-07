@@ -45,10 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
       currentStep++;
       updateStep();
     } else {
-      alert('شكراً! سنراجع طلبك ونتواصل معك خلال أسبوع.');
-      currentStep = 0;
-      form.querySelectorAll('input, select, textarea').forEach(el => el.value = '');
-      updateStep();
+      form.requestSubmit();
     }
+  });
+
+  form.addEventListener('reset', () => {
+    currentStep = 0;
+    updateStep();
   });
 });

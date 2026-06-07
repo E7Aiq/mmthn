@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ممتهن — جمعية غير ربحية تربط الخريجين بالشركات الناشئة عبر عقود تدريبية رمزية مع إشراف خبراء">
-  <title>ممتهن — من خريج إلى مهني</title>
+  <meta name="description" content="ممتهن — مبادرة مهنية سعودية غير ربحية تربط الخريجين بالشركات الناشئة للتطبيق العملي">
+  <title>ممتهن — من خريج إلى ممتهن</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=IBM+Plex+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,11 +17,13 @@
 </head>
 <body>
 
+  <div id="scroll-progress" aria-hidden="true"></div>
+
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="القائمة الرئيسية">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo" aria-label="ممتهن — الصفحة الرئيسية">
-        <img src="assets/logo.svg" alt="ممتهن" width="140" height="40">
+        <img src="assets/logo.svg" alt="ممتهن — من خريج إلى ممتهن" width="140" height="40">
       </a>
       <div class="nav__links">
         <a href="graduates.html" class="nav__link">الخريجون</a>
@@ -55,12 +57,12 @@
       <div class="container">
         <div class="hero__grid">
           <div class="hero__content">
-            <span class="label-tag fade-up">جمعية غير ربحية · رؤية 2030</span>
-            <h1 class="hero__headline fade-up" style="--i: 1">
-              من خريج<br>إلى <span class="lime-underline">مهني</span>
+            <span class="label-tag fade-up">مبادرة مهنية سعودية · رؤية 2030</span>
+            <h1 class="hero__headline" style="--i: 1">
+              من خريج<br>إلى <span class="lime-underline">ممتهن</span>
             </h1>
             <p class="hero__body fade-up" style="--i: 2">
-              نربطك بشركة ناشئة حقيقية، نُشرف على تطوّرك مع خبير في مجالك، ونُخرّجك بشهادة وظيفية موثّقة — كل ذلك براتب رمزي يغطي مصاريفك.
+              الجسر بين الخريج الطموح والشركة الناشئة — فرص حقيقية للتطبيق العملي، خبرة موثقة، ومستقبل مهني واضح.
             </p>
             <div class="hero__ctas fade-up" style="--i: 3">
               <a href="graduates.html" class="btn btn-primary">أنا خريج</a>
@@ -68,39 +70,33 @@
             </div>
             <div class="hero__stats fade-up stagger-children" style="--i: 4">
               <div class="stat" style="--i: 0">
-                <div class="stat__number" data-count="200" data-prefix="+">٠</div>
-                <div class="stat__label">خريج مسجّل</div>
+                <div class="stat__number" style="font-size: var(--text-lg); line-height: 1.3; margin-block-end: var(--space-xs); font-family: var(--font-arabic);">+٤٠٠٠ مستفيد</div>
+                <div class="stat__label" style="font-size: var(--text-xs); line-height: 1.5; color: var(--color-fog);">أكثر من أربعة آلاف شاب وشابة استفادوا من برامج المبادرة والإرشاد المهني.</div>
               </div>
               <div class="stat" style="--i: 1">
-                <div class="stat__number" data-count="45" data-prefix="+">٠</div>
-                <div class="stat__label">شركة ناشئة</div>
+                <div class="stat__number" style="font-size: var(--text-lg); line-height: 1.3; margin-block-end: var(--space-xs); font-family: var(--font-arabic);">مبادرة مهنية حديثة</div>
+                <div class="stat__label" style="font-size: var(--text-xs); line-height: 1.5; color: var(--color-fog);">مبادرة سعودية تركز على تحويل التعلم النظري إلى فرص تطبيق عملي في الشركات الناشئة.</div>
               </div>
               <div class="stat" style="--i: 2">
-                <div class="stat__number" data-count="5">٠</div>
-                <div class="stat__label">مسارات مهنية</div>
+                <div class="stat__number" style="font-size: var(--text-lg); line-height: 1.3; margin-block-end: var(--space-xs); font-family: var(--font-arabic);">التسجيل مفتوح</div>
+                <div class="stat__label" style="font-size: var(--text-xs); line-height: 1.5; color: var(--color-fog);">باب التسجيل مفتوح للشركات الناشئة الباحثة عن كفاءات جاهزة للتجربة والعمل المرن.</div>
               </div>
               <div class="stat" style="--i: 3">
-                <div class="stat__number" data-count="93" data-percent="true">٠</div>
-                <div class="stat__label">معدّل الرضا</div>
+                <div class="stat__number" style="font-size: var(--text-lg); line-height: 1.3; margin-block-end: var(--space-xs); font-family: var(--font-arabic);">مسارات متجددة</div>
+                <div class="stat__label" style="font-size: var(--text-xs); line-height: 1.5; color: var(--color-fog);">مسارات مهنية يتم تطويرها وتحديثها بناءً على واقع واحتياج سوق العمل الفعلي.</div>
               </div>
             </div>
           </div>
           <div class="hero__visual fade-up" style="--i: 2">
-            <div class="pro-card pro-card--back" aria-hidden="true">
-              <div class="pro-card__avatar">س</div>
-              <div class="pro-card__name">سارة العتيبي</div>
-              <span class="badge badge--lime">تسويق رقمي</span>
-            </div>
-            <div class="pro-card pro-card--front">
-              <div class="pro-card__avatar">م</div>
-              <div class="pro-card__name">محمد الحربي</div>
-              <div class="pro-card__path"><span class="badge badge--lime">تطوير برمجيات</span></div>
-              <p class="pro-card__progress-label">اكتملت الدورة ٧٠٪</p>
-              <div class="progress-bar"><div class="progress-bar__fill" style="width: 70%"></div></div>
-              <div class="pro-card__company">
-                <div class="pro-card__company-logo">تق</div>
-                <span>شركة تقنية ناشئة · بإشراف أ. خالد المنصور</span>
-              </div>
+            <div class="hero-image-col">
+              <img
+                src="./assets/hero-illustration.png"
+                alt="ممتهن - من خريج إلى ممتهن"
+                class="hero-illustration"
+                loading="eager"
+                width="1024"
+                height="615"
+              />
             </div>
           </div>
         </div>
@@ -112,14 +108,14 @@
       <div class="container">
         <div class="problem-solution">
           <div class="ps-list fade-up">
-            <h2 class="ps-list__title">المشكلة</h2>
+            <h2 class="ps-list__title">لماذا وُجدت ممتهن؟</h2>
             <div class="ps-list__item">
               <span class="ps-list__icon text-ember"><i class="ph ph-x-circle"></i></span>
-              <span>خريجون موهوبون يبحثون عن أول فرصة — لكن الشركات تطلب «خبرة ٣ سنوات» لمن لم يعمل يوماً</span>
+              <span>أغلب فرص العمل تتطلب خبرة عملية لا يملكها الخريج الجديد، مع صعوبة تجاوز فلاتر أنظمة التتبع الآلي (ATS).</span>
             </div>
             <div class="ps-list__item">
               <span class="ps-list__icon text-ember"><i class="ph ph-x-circle"></i></span>
-              <span>شركات ناشئة تحتاج مواهب بأسعار معقولة — لكن التوظيف التقليدي مكلف ومعقّد</span>
+              <span>التوظيف التقليدي مكلف ومعقد للشركات الناشئة، مع صعوبة الوصول لكفاءات تمتلك مهارات هجينة (شخصية وتقنية).</span>
             </div>
           </div>
           <div class="problem-solution__divider" aria-hidden="true"></div>
@@ -127,11 +123,11 @@
             <h2 class="ps-list__title">الحل</h2>
             <div class="ps-list__item">
               <span class="ps-list__icon text-lime"><i class="ph ph-check-circle"></i></span>
-              <span>عقود تدريبية رمزية تمنحك خبرة حقيقية في بيئة شركة ناشئة — مع راتب يغطي مصاريفك</span>
+              <span>ربط مرن يمنح الخريج فرصة حقيقية لبناء خبرته العملية وإنجازاته في بيئة الشركات الناشئة، بدون تكلفة عليه.</span>
             </div>
             <div class="ps-list__item">
               <span class="ps-list__icon text-lime"><i class="ph ph-check-circle"></i></span>
-              <span>إشراف خبير أسبوعي يضمن أنك تتعلّم الصح — وتخرج بشهادة وظيفية موثّقة</span>
+              <span>تسهيل وصول الشركات لكفاءات شابة بطموح كبير وشغف متقد، بتكلفة أقل من التوظيف التقليدي ودون تعقيد.</span>
             </div>
           </div>
         </div>
@@ -148,19 +144,19 @@
             <div class="step__number">١</div>
             <div class="step__icon"><i class="ph ph-student"></i></div>
             <h3 class="step__title">للخريج</h3>
-            <p class="step__desc">تختار مسارك، نُطابقك مع شركة ناشئة، وتبدأ العمل مع إشراف خبير أسبوعي حتى تحصل على شهادتك.</p>
+            <p class="step__desc">تسجل وتحدد مسارك، تراجع ممتهن ملفك وتربطك بشركة ناشئة تناسب مهاراتك لتبدأ تجربة عملية تفاعلية من اليوم الأول.</p>
           </div>
           <div class="step fade-up" style="--i: 1">
             <div class="step__number">٢</div>
             <div class="step__icon"><i class="ph ph-rocket-launch"></i></div>
             <h3 class="step__title">للشركة الناشئة</h3>
-            <p class="step__desc">تحصل على موهبة شغوفة بتكلفة رمزية — نتولى المطابقة والإشراف، وأنت تركّز على بناء منتجك.</p>
+            <p class="step__desc">تشاركنا احتياجك ونرشح لك كفاءات شابة جاهزة للعمل والتجربة المرنة، دون التزامات توظيف طويلة الأمد من البداية.</p>
           </div>
           <div class="step fade-up" style="--i: 2">
             <div class="step__number">٣</div>
             <div class="step__icon"><i class="ph ph-chalkboard-teacher"></i></div>
             <h3 class="step__title">للخبير</h3>
-            <p class="step__desc">تشارك خبرتك ٢-٣ ساعات أسبوعياً — جلسة إرشاد ومراجعة تقرير — وتُساهم في بناء جيل مهني سعودي.</p>
+            <p class="step__desc">ترافق الخريج في رحلته بجلسات توجيه عن بعد (ساعتين أسبوعياً) لمساعدته على ترجمة مهامه لإنجازات في سيرته الذاتية.</p>
           </div>
         </div>
       </div>
@@ -170,14 +166,14 @@
     <section class="section" style="background: var(--color-surface)">
       <div class="container">
         <p class="section-label fade-up">المسارات المهنية</p>
-        <h2 class="section-title fade-up">أين تريد أن تكون بعد ٦ أشهر؟</h2>
+        <h2 class="section-title fade-up">مسارات مهنية تناسب واقع ٢٠٢٦</h2>
         <div class="paths-scroll stagger-children">
           <article class="path-card fade-up" style="--i: 0">
             <div class="path-card__icon" style="background: var(--path-data)"><i class="ph ph-chart-bar"></i></div>
             <div class="path-card__body">
               <h3 class="path-card__title">تحليل البيانات والذكاء الاصطناعي</h3>
               <p class="path-card__subtitle en" dir="ltr">Data & AI</p>
-              <p class="path-card__desc">حوّل البيانات الخام إلى قرارات ذكية</p>
+              <p class="path-card__desc">حوّل البيانات الخام لقرارات تدعم نمو المشروع</p>
               <a href="paths.html" class="path-card__link">استكشف المسار ←</a>
             </div>
           </article>
@@ -186,7 +182,7 @@
             <div class="path-card__body">
               <h3 class="path-card__title">تطوير البرمجيات والمنتج</h3>
               <p class="path-card__subtitle en" dir="ltr">Software & Product</p>
-              <p class="path-card__desc">ابنِ منتجات رقمية من الفكرة للإطلاق</p>
+              <p class="path-card__desc">ابنِ منتجات برمجية وأتمت العمليات التشغيلية</p>
               <a href="paths.html" class="path-card__link">استكشف المسار ←</a>
             </div>
           </article>
@@ -195,7 +191,7 @@
             <div class="path-card__body">
               <h3 class="path-card__title">التسويق الرقمي والمحتوى</h3>
               <p class="path-card__subtitle en" dir="ltr">Digital Marketing</p>
-              <p class="path-card__desc">صمّم حملات ومحتوى يحقق نتائج</p>
+              <p class="path-card__desc">صمّم خطط ترويج ومحتوى رقمي يجذب العملاء</p>
               <a href="paths.html" class="path-card__link">استكشف المسار ←</a>
             </div>
           </article>
@@ -204,7 +200,7 @@
             <div class="path-card__body">
               <h3 class="path-card__title">تصميم تجربة المستخدم</h3>
               <p class="path-card__subtitle en" dir="ltr">UX Design</p>
-              <p class="path-card__desc">صمّم تجارب رقمية سهلة وجميلة</p>
+              <p class="path-card__desc">ارسم تدفقات وواجهات رقمية سهلة الاستخدام</p>
               <a href="paths.html" class="path-card__link">استكشف المسار ←</a>
             </div>
           </article>
@@ -213,7 +209,16 @@
             <div class="path-card__body">
               <h3 class="path-card__title">إدارة المشاريع والعمليات</h3>
               <p class="path-card__subtitle en" dir="ltr">Project & Operations</p>
-              <p class="path-card__desc">نظّم المشاريع وحسّن العمليات</p>
+              <p class="path-card__desc">نظّم فرق العمل وتابع تنفيذ الخطط والمشاريع</p>
+              <a href="paths.html" class="path-card__link">استكشف المسار ←</a>
+            </div>
+          </article>
+          <article class="path-card fade-up" style="--i: 5">
+            <div class="path-card__icon" style="background: #14B8A6"><i class="ph ph-truck"></i></div>
+            <div class="path-card__body">
+              <h3 class="path-card__title">المشتريات وسلاسل الإمداد</h3>
+              <p class="path-card__subtitle en" dir="ltr">Procurement & Supply Chain</p>
+              <p class="path-card__desc">إدارة المخزون والتفاوض اللوجستي والشرائي</p>
               <a href="paths.html" class="path-card__link">استكشف المسار ←</a>
             </div>
           </article>
@@ -224,51 +229,12 @@
     <!-- Interest Quiz -->
     <section class="section">
       <div class="container">
-        <p class="section-label fade-up">اختبار سريع</p>
-        <h2 class="section-title fade-up">اكتشف المسار المناسب لك</h2>
+        <p class="section-label fade-up">اختبار الاهتمامات</p>
+        <h2 class="section-title fade-up">اختبار قصير يقترح لك مساراً مبدئياً</h2>
         <div class="quiz-section fade-up" id="interest-quiz" aria-live="polite"></div>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="section">
-      <div class="container">
-        <p class="section-label fade-up">قصص نجاح</p>
-        <h2 class="section-title fade-up">ماذا يقول خريجونا؟</h2>
-        <div class="testimonials-grid stagger-children">
-          <article class="testimonial-card fade-up" style="--i: 0">
-            <p class="testimonial-card__quote">«خلال ٣ أشهر انتقلت من صفر خبرة إلى أول مشروع تحليل بيانات حقيقي. الخبير ساعدني أفهم إيش المطلوب فعلاً في السوق.»</p>
-            <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar" style="background: var(--path-data)">ن</div>
-              <div>
-                <div class="testimonial-card__name">نورة القحطاني</div>
-                <div class="testimonial-card__meta">تحليل بيانات · شركة FinTech ناشئة</div>
-              </div>
-            </div>
-          </article>
-          <article class="testimonial-card fade-up" style="--i: 1">
-            <p class="testimonial-card__quote">«ما توقعت أبني تطبيق كامل خلال شهر — لكن الفريق والخبير خلّوني أشتغل على مشاكل حقيقية، مو تمارين نظرية.»</p>
-            <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar" style="background: var(--path-dev)">ع</div>
-              <div>
-                <div class="testimonial-card__name">عبدالرحمن الشمري</div>
-                <div class="testimonial-card__meta">تطوير برمجيات · شركة SaaS</div>
-              </div>
-            </div>
-          </article>
-          <article class="testimonial-card fade-up" style="--i: 2">
-            <p class="testimonial-card__quote">«الشهادة اللي حصلت عليها ساعدتني أقنع أول عميل freelance. ممتهن ما أعطتني ورقة — أعطتني بورتفوليو.»</p>
-            <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar" style="background: var(--path-ux)">ر</div>
-              <div>
-                <div class="testimonial-card__name">ريم الدوسري</div>
-                <div class="testimonial-card__meta">تصميم UX · وكالة تصميم</div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
 
     <!-- Vision 2030 -->
     <section class="section section--dark">
@@ -278,17 +244,17 @@
           <div class="vision-item fade-up" style="--i: 0">
             <div class="vision-item__icon"><i class="ph ph-users-three"></i></div>
             <h3 class="vision-item__title">تنمية رأس المال البشري</h3>
-            <p class="vision-item__text">نُعدّ كوادر سعودية شابة بمهارات المستقبل — تحليل بيانات، تطوير، تسويق رقمي — لتلبية احتياجات سوق العمل المتغيّر.</p>
+            <p class="vision-item__text">نساهم في تمكين الكوادر الوطنية الشابة بمهارات هجينة تواكب واقع سوق العمل وتكسر حاجز الخبرة المفقودة.</p>
           </div>
           <div class="vision-item fade-up" style="--i: 1">
             <div class="vision-item__icon"><i class="ph ph-lightbulb"></i></div>
             <h3 class="vision-item__title">ريادة الأعمال</h3>
-            <p class="vision-item__text">ندعم الشركات الناشئة السعودية بمواهب مؤهّلة بتكلفة رمزية — لنموّ قطاع ريادة الأعمال في المملكة.</p>
+            <p class="vision-item__text">ندعم نمو وتوسع بيئة الشركات الناشئة السعودية بمواهب مؤهلة للتطبيق العملي المرن وخفض تكاليف التأسيس.</p>
           </div>
           <div class="vision-item fade-up" style="--i: 2">
             <div class="vision-item__icon"><i class="ph ph-briefcase"></i></div>
             <h3 class="vision-item__title">توطين الوظائف</h3>
-            <p class="vision-item__text">نربط الخريجين السعوديين بفرص عمل حقيقية في القطاعات الناشئة — بديل عملي عن البحث العشوائي عن وظيفة.</p>
+            <p class="vision-item__text">نساعد الخريجين على الاستعداد لدخول قطاعات واعدة كالمشتريات، الخدمات اللوجستية، والتقنية ليكونوا خياراً مفضلاً.</p>
           </div>
         </div>
       </div>
@@ -297,9 +263,9 @@
     <!-- CTA Banner -->
     <section class="section section--lime">
       <div class="container cta-banner">
-        <h2 class="cta-banner__title fade-up">جاهز تبدأ مسيرتك المهنية؟</h2>
+        <h2 class="cta-banner__title fade-up">جاهز تبدأ الخطوة الأولى؟</h2>
         <div class="cta-banner__actions fade-up" style="--i: 1">
-          <a href="graduates.html" class="btn btn-dark">أنا خريج — سجّل الآن</a>
+          <a href="graduates.html" class="btn btn-dark">أنا خريج — ابدأ الآن</a>
           <a href="startups.html" class="btn btn-dark">أنا شركة — انضم كشريك</a>
         </div>
       </div>
@@ -311,8 +277,8 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <img src="assets/logo-inverse.svg" alt="ممتهن" width="140" height="40" loading="lazy">
-          <p>جمعية غير ربحية تربط الخريجين بالشركات الناشئة — من خريج إلى مهني.</p>
+          <img src="assets/logo-inverse.svg" alt="ممتهن — من خريج إلى ممتهن" width="140" height="40" loading="lazy">
+          <p>ممتهن — مبادرة مهنية سعودية تربط الخريجين والشركات الناشئة.</p>
           <div class="footer__social">
             <a href="#" aria-label="تويتر"><i class="ph ph-x-logo"></i></a>
             <a href="#" aria-label="لينكدإن"><i class="ph ph-linkedin-logo"></i></a>
@@ -328,7 +294,6 @@
         <div>
           <h4 class="footer__col-title">للشركات</h4>
           <a href="startups.html" class="footer__link">انضم كشريك</a>
-          <a href="startups.html#pricing" class="footer__link">الباقات والأسعار</a>
           <a href="startups.html#apply" class="footer__link">طلب شراكة</a>
         </div>
         <div>
@@ -339,7 +304,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        © 2025 ممتهن | جمعية غير ربحية مرخّصة في المملكة العربية السعودية
+        ممتهن — مبادرة مهنية سعودية
       </div>
     </div>
   </footer>

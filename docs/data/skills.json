@@ -7,9 +7,9 @@
       { "id": "python", "nameAr": "Python", "level": "متوسط", "resourceUrl": "https://python.org/doc" },
       { "id": "sql", "nameAr": "SQL", "level": "أساسي", "resourceUrl": "https://sqlzoo.net" },
       { "id": "excel", "nameAr": "Excel متقدم", "level": "أساسي", "resourceUrl": "https://support.microsoft.com" },
-      { "id": "powerbi", "nameAr": "Power BI", "level": "متوسط", "resourceUrl": "https://learn.microsoft.com" },
+      { "id": "powerbi", "nameAr": "Power BI / Tableau", "level": "متوسط", "resourceUrl": "https://learn.microsoft.com" },
       { "id": "stats", "nameAr": "إحصاء أساسي", "level": "أساسي", "resourceUrl": "https://khan.academy" },
-      { "id": "communication", "nameAr": "تواصل وعرض", "level": "متوسط", "resourceUrl": "" }
+      { "id": "communication", "nameAr": "تواصل وعرض البيانات", "level": "متوسط", "resourceUrl": "" }
     ]
   },
   {
@@ -44,7 +44,7 @@
       { "id": "html-css", "nameAr": "HTML & CSS", "level": "متوسط", "resourceUrl": "https://developer.mozilla.org" },
       { "id": "javascript", "nameAr": "JavaScript", "level": "متوسط", "resourceUrl": "https://javascript.info" },
       { "id": "react", "nameAr": "React", "level": "أساسي", "resourceUrl": "https://react.dev" },
-      { "id": "git", "nameAr": "Git", "level": "أساسي", "resourceUrl": "https://git-scm.com" },
+      { "id": "git", "nameAr": "Git & GitHub", "level": "أساسي", "resourceUrl": "https://git-scm.com" },
       { "id": "responsive", "nameAr": "تصميم متجاوب", "level": "أساسي", "resourceUrl": "" }
     ]
   },
@@ -53,11 +53,11 @@
     "jobNameAr": "مطوّر خلفية",
     "pathId": "software-product",
     "requiredSkills": [
-      { "id": "nodejs", "nameAr": "Node.js", "level": "متوسط", "resourceUrl": "https://nodejs.org" },
-      { "id": "databases", "nameAr": "قواعد البيانات", "level": "متوسط", "resourceUrl": "https://postgresql.org" },
+      { "id": "nodejs", "nameAr": "Node.js / Express", "level": "متوسط", "resourceUrl": "https://nodejs.org" },
+      { "id": "databases", "nameAr": "قواعد البيانات SQL/NoSQL", "level": "متوسط", "resourceUrl": "https://postgresql.org" },
       { "id": "apis", "nameAr": "REST APIs", "level": "متوسط", "resourceUrl": "https://restfulapi.net" },
       { "id": "git", "nameAr": "Git", "level": "أساسي", "resourceUrl": "https://git-scm.com" },
-      { "id": "security", "nameAr": "أمن تطبيقات", "level": "أساسي", "resourceUrl": "" }
+      { "id": "security", "nameAr": "أمن تطبيقات الويب", "level": "أساسي", "resourceUrl": "" }
     ]
   },
   {
@@ -65,11 +65,11 @@
     "jobNameAr": "مدير منتج تقني",
     "pathId": "software-product",
     "requiredSkills": [
-      { "id": "product-thinking", "nameAr": "تفكير منتج", "level": "متوسط", "resourceUrl": "https://example.com" },
-      { "id": "user-research", "nameAr": "بحث المستخدم", "level": "أساسي", "resourceUrl": "" },
-      { "id": "roadmapping", "nameAr": "تخطيط المنتج", "level": "متوسط", "resourceUrl": "" },
-      { "id": "analytics", "nameAr": "تحليلات المنتج", "level": "أساسي", "resourceUrl": "https://analytics.google.com" },
-      { "id": "communication", "nameAr": "تواصل مع الفرق", "level": "متقدم", "resourceUrl": "" }
+      { "id": "product-thinking", "nameAr": "تفكير منتج ورؤية تقنية", "level": "متوسط", "resourceUrl": "https://example.com" },
+      { "id": "user-research", "nameAr": "بحث المستخدمين", "level": "أساسي", "resourceUrl": "" },
+      { "id": "roadmapping", "nameAr": "تخطيط خريطة المنتج", "level": "متوسط", "resourceUrl": "" },
+      { "id": "analytics", "nameAr": "تحليلات سلوك المستخدم", "level": "أساسي", "resourceUrl": "https://analytics.google.com" },
+      { "id": "communication", "nameAr": "تواصل وتنسيق بين الفرق", "level": "متقدم", "resourceUrl": "" }
     ]
   },
   {
@@ -77,11 +77,11 @@
     "jobNameAr": "أخصائي تسويق رقمي",
     "pathId": "digital-marketing",
     "requiredSkills": [
-      { "id": "seo", "nameAr": "SEO", "level": "متوسط", "resourceUrl": "https://developers.google.com/search" },
-      { "id": "social-media", "nameAr": "إدارة وسائل التواصل", "level": "متوسط", "resourceUrl": "" },
-      { "id": "google-ads", "nameAr": "Google Ads", "level": "أساسي", "resourceUrl": "https://skillshop.withgoogle.com" },
+      { "id": "seo", "nameAr": "أساسيات SEO", "level": "متوسط", "resourceUrl": "https://developers.google.com/search" },
+      { "id": "social-media", "nameAr": "إدارة منصات التواصل", "level": "متوسط", "resourceUrl": "" },
+      { "id": "google-ads", "nameAr": "إعلانات Google / Meta", "level": "أساسي", "resourceUrl": "https://skillshop.withgoogle.com" },
       { "id": "analytics", "nameAr": "Google Analytics", "level": "أساسي", "resourceUrl": "https://analytics.google.com" },
-      { "id": "content", "nameAr": "كتابة محتوى", "level": "متوسط", "resourceUrl": "" }
+      { "id": "content", "nameAr": "كتابة محتوى تفاعلي", "level": "متوسط", "resourceUrl": "" }
     ]
   },
   {
@@ -89,10 +89,10 @@
     "jobNameAr": "مدير محتوى",
     "pathId": "digital-marketing",
     "requiredSkills": [
-      { "id": "writing", "nameAr": "كتابة إبداعية", "level": "متقدم", "resourceUrl": "" },
+      { "id": "writing", "nameAr": "كتابة إبداعية وصياغة", "level": "متقدم", "resourceUrl": "" },
       { "id": "content-strategy", "nameAr": "استراتيجية محتوى", "level": "متوسط", "resourceUrl": "" },
-      { "id": "social-media", "nameAr": "وسائل التواصل", "level": "متوسط", "resourceUrl": "" },
-      { "id": "video", "nameAr": "إنتاج فيديو", "level": "أساسي", "resourceUrl": "" },
+      { "id": "social-media", "nameAr": "شبكات التواصل", "level": "متوسط", "resourceUrl": "" },
+      { "id": "video", "nameAr": "إنتاج وتحرير الفيديو", "level": "أساسي", "resourceUrl": "" },
       { "id": "seo", "nameAr": "SEO للمحتوى", "level": "أساسي", "resourceUrl": "" }
     ]
   },
@@ -101,11 +101,11 @@
     "jobNameAr": "أخصائي SEO",
     "pathId": "digital-marketing",
     "requiredSkills": [
-      { "id": "seo-technical", "nameAr": "SEO تقني", "level": "متوسط", "resourceUrl": "https://developers.google.com/search" },
-      { "id": "keyword-research", "nameAr": "بحث الكلمات المفتاحية", "level": "متوسط", "resourceUrl": "" },
+      { "id": "seo-technical", "nameAr": "SEO تقني ومحركات البحث", "level": "متوسط", "resourceUrl": "https://developers.google.com/search" },
+      { "id": "keyword-research", "nameAr": "بحث وتحليل الكلمات المفتاحية", "level": "متوسط", "resourceUrl": "" },
       { "id": "analytics", "nameAr": "Google Analytics & Search Console", "level": "متوسط", "resourceUrl": "" },
-      { "id": "content", "nameAr": "تحسين المحتوى", "level": "أساسي", "resourceUrl": "" },
-      { "id": "link-building", "nameAr": "بناء الروابط", "level": "أساسي", "resourceUrl": "" }
+      { "id": "content", "nameAr": "تحسين المحتوى للمحركات", "level": "أساسي", "resourceUrl": "" },
+      { "id": "link-building", "nameAr": "بناء الروابط الخارجية", "level": "أساسي", "resourceUrl": "" }
     ]
   },
   {
@@ -114,9 +114,9 @@
     "pathId": "ux-design",
     "requiredSkills": [
       { "id": "figma", "nameAr": "Figma", "level": "متوسط", "resourceUrl": "https://figma.com" },
-      { "id": "user-research", "nameAr": "بحث المستخدم", "level": "متوسط", "resourceUrl": "" },
-      { "id": "wireframing", "nameAr": "Wireframing", "level": "متوسط", "resourceUrl": "" },
-      { "id": "prototyping", "nameAr": "النماذج الأولية", "level": "أساسي", "resourceUrl": "" },
+      { "id": "user-research", "nameAr": "بحث المستخدمين", "level": "متوسط", "resourceUrl": "" },
+      { "id": "wireframing", "nameAr": "رسم الإطارات الهيكلية", "level": "متوسط", "resourceUrl": "" },
+      { "id": "prototyping", "nameAr": "تصميم النماذج الأولية", "level": "أساسي", "resourceUrl": "" },
       { "id": "usability", "nameAr": "اختبار قابلية الاستخدام", "level": "أساسي", "resourceUrl": "" }
     ]
   },
@@ -126,10 +126,10 @@
     "pathId": "ux-design",
     "requiredSkills": [
       { "id": "figma", "nameAr": "Figma", "level": "متقدم", "resourceUrl": "https://figma.com" },
-      { "id": "design-systems", "nameAr": "أنظمة التصميم", "level": "متوسط", "resourceUrl": "" },
-      { "id": "typography", "nameAr": "طباعة وألوان", "level": "متوسط", "resourceUrl": "" },
-      { "id": "responsive", "nameAr": "تصميم متجاوب", "level": "متوسط", "resourceUrl": "" },
-      { "id": "animation", "nameAr": "حركة وتفاعل", "level": "أساسي", "resourceUrl": "" }
+      { "id": "design-systems", "nameAr": "أنظمة التصميم Design Systems", "level": "متوسط", "resourceUrl": "" },
+      { "id": "typography", "nameAr": "الخطوط وتنسيق الألوان", "level": "متوسط", "resourceUrl": "" },
+      { "id": "responsive", "nameAr": "تصميم متجاوب لمختلف الشاشات", "level": "متوسط", "resourceUrl": "" },
+      { "id": "animation", "nameAr": "الحركة والتفاعلات الدقيقة", "level": "أساسي", "resourceUrl": "" }
     ]
   },
   {
@@ -137,11 +137,11 @@
     "jobNameAr": "مدير مشاريع",
     "pathId": "project-ops",
     "requiredSkills": [
-      { "id": "agile", "nameAr": "Agile & Scrum", "level": "متوسط", "resourceUrl": "https://scrum.org" },
-      { "id": "planning", "nameAr": "تخطيط المشاريع", "level": "متوسط", "resourceUrl": "" },
-      { "id": "risk", "nameAr": "إدارة المخاطر", "level": "أساسي", "resourceUrl": "" },
+      { "id": "agile", "nameAr": "منهجيات Agile & Scrum", "level": "متوسط", "resourceUrl": "https://scrum.org" },
+      { "id": "planning", "nameAr": "تخطيط وجدولة المشاريع", "level": "متوسط", "resourceUrl": "" },
+      { "id": "risk", "nameAr": "إدارة المخاطر والتحديات", "level": "أساسي", "resourceUrl": "" },
       { "id": "stakeholder", "nameAr": "إدارة أصحاب المصلحة", "level": "متوسط", "resourceUrl": "" },
-      { "id": "tools", "nameAr": "Jira / Asana", "level": "أساسي", "resourceUrl": "https://atlassian.com" }
+      { "id": "tools", "nameAr": "أدوات التتبع Jira / Asana", "level": "أساسي", "resourceUrl": "https://atlassian.com" }
     ]
   },
   {
@@ -149,11 +149,11 @@
     "jobNameAr": "محلل عمليات",
     "pathId": "project-ops",
     "requiredSkills": [
-      { "id": "process-mapping", "nameAr": "رسم العمليات", "level": "متوسط", "resourceUrl": "" },
-      { "id": "excel", "nameAr": "Excel متقدم", "level": "متوسط", "resourceUrl": "" },
-      { "id": "lean", "nameAr": "Lean Six Sigma", "level": "أساسي", "resourceUrl": "" },
-      { "id": "data-analysis", "nameAr": "تحليل بيانات عمليات", "level": "أساسي", "resourceUrl": "" },
-      { "id": "automation", "nameAr": "أتمتة العمليات", "level": "أساسي", "resourceUrl": "" }
+      { "id": "process-mapping", "nameAr": "رسم الإجراءات والتدفقات", "level": "متوسط", "resourceUrl": "" },
+      { "id": "excel", "nameAr": "Excel للعمليات والتحليل", "level": "متوسط", "resourceUrl": "" },
+      { "id": "lean", "nameAr": "منهجيات Lean التشغيلية", "level": "أساسي", "resourceUrl": "" },
+      { "id": "data-analysis", "nameAr": "تحليل أداء ومقاييس العمليات", "level": "أساسي", "resourceUrl": "" },
+      { "id": "automation", "nameAr": "أتمتة المهام المتكررة", "level": "أساسي", "resourceUrl": "" }
     ]
   },
   {
@@ -161,11 +161,11 @@
     "jobNameAr": "منسّق مشاريع",
     "pathId": "project-ops",
     "requiredSkills": [
-      { "id": "organization", "nameAr": "تنظيم ومهام", "level": "متوسط", "resourceUrl": "" },
-      { "id": "communication", "nameAr": "تواصل فعّال", "level": "متوسط", "resourceUrl": "" },
-      { "id": "documentation", "nameAr": "توثيق المشاريع", "level": "أساسي", "resourceUrl": "" },
-      { "id": "scheduling", "nameAr": "جدولة الاجتماعات", "level": "أساسي", "resourceUrl": "" },
-      { "id": "tools", "nameAr": "أدوات إدارة المشاريع", "level": "أساسي", "resourceUrl": "" }
+      { "id": "organization", "nameAr": "التنظيم وتوزيع المهام", "level": "متوسط", "resourceUrl": "" },
+      { "id": "communication", "nameAr": "التواصل الفعّال والمتابعة", "level": "متوسط", "resourceUrl": "" },
+      { "id": "documentation", "nameAr": "توثيق محاضر الاجتماعات والقرارات", "level": "أساسي", "resourceUrl": "" },
+      { "id": "scheduling", "nameAr": "جدولة المهام والخطط الزمنية", "level": "أساسي", "resourceUrl": "" },
+      { "id": "tools", "nameAr": "أدوات إدارة المهام التفاعلية", "level": "أساسي", "resourceUrl": "" }
     ]
   },
   {
@@ -173,11 +173,47 @@
     "jobNameAr": "باحث تجربة مستخدم",
     "pathId": "ux-design",
     "requiredSkills": [
-      { "id": "interviews", "nameAr": "مقابلات المستخدمين", "level": "متوسط", "resourceUrl": "" },
-      { "id": "surveys", "nameAr": "استبيانات وتحليل", "level": "أساسي", "resourceUrl": "" },
+      { "id": "interviews", "nameAr": "إجراء مقابلات المستخدمين", "level": "متوسط", "resourceUrl": "" },
+      { "id": "surveys", "nameAr": "صياغة استبيانات وتحليل النتائج", "level": "أساسي", "resourceUrl": "" },
       { "id": "usability-testing", "nameAr": "اختبار قابلية الاستخدام", "level": "متوسط", "resourceUrl": "" },
-      { "id": "personas", "nameAr": "بناء شخصيات المستخدم", "level": "أساسي", "resourceUrl": "" },
-      { "id": "reporting", "nameAr": "تقارير البحث", "level": "متوسط", "resourceUrl": "" }
+      { "id": "personas", "nameAr": "بناء شخصيات المستخدمين Persona", "level": "أساسي", "resourceUrl": "" },
+      { "id": "reporting", "nameAr": "كتابة تقارير ونتائج أبحاث المستخدم", "level": "متوسط", "resourceUrl": "" }
+    ]
+  },
+  {
+    "jobId": "purchasing-specialist",
+    "jobNameAr": "أخصائي مشتريات",
+    "pathId": "procurement-supply",
+    "requiredSkills": [
+      { "id": "supplychain-basics", "nameAr": "أساسيات سلاسل الإمداد", "level": "أساسي", "resourceUrl": "https://coursera.org" },
+      { "id": "negotiation", "nameAr": "مهارات التفاوض مع الموردين", "level": "متوسط", "resourceUrl": "" },
+      { "id": "vendor-contracts", "nameAr": "صياغة عقود المشتريات", "level": "متوسط", "resourceUrl": "" },
+      { "id": "excel-adv", "nameAr": "Excel متقدم للوجستيات", "level": "متوسط", "resourceUrl": "https://support.microsoft.com" },
+      { "id": "communication", "nameAr": "التواصل الفعّال وبناء العلاقات", "level": "متوسط", "resourceUrl": "" }
+    ]
+  },
+  {
+    "jobId": "logistic-coordinator",
+    "jobNameAr": "منسّق لوجستي",
+    "pathId": "procurement-supply",
+    "requiredSkills": [
+      { "id": "warehouse-mgmt", "nameAr": "إدارة المستودعات والمخازن", "level": "متوسط", "resourceUrl": "" },
+      { "id": "shipping-coord", "nameAr": "التنسيق والشحن اللوجستي", "level": "متوسط", "resourceUrl": "" },
+      { "id": "excel-adv", "nameAr": "Excel لإدارة المخزون", "level": "أساسي", "resourceUrl": "https://support.microsoft.com" },
+      { "id": "documentation", "nameAr": "توثيق إجراءات الاستلام والشحن", "level": "أساسي", "resourceUrl": "" },
+      { "id": "problem-solving", "nameAr": "حل المشكلات وسرعة الاستجابة", "level": "متوسط", "resourceUrl": "" }
+    ]
+  },
+  {
+    "jobId": "supplychain-specialist",
+    "jobNameAr": "أخصائي سلاسل إمداد",
+    "pathId": "procurement-supply",
+    "requiredSkills": [
+      { "id": "supplychain-basics", "nameAr": "أساسيات وتخطيط سلاسل الإمداد", "level": "متقدم", "resourceUrl": "https://coursera.org" },
+      { "id": "warehouse-mgmt", "nameAr": "إدارة المخزون وتحديد الفائض", "level": "متوسط", "resourceUrl": "" },
+      { "id": "demand-planning", "nameAr": "تخطيط الاحتياجات والطلب", "level": "متوسط", "resourceUrl": "" },
+      { "id": "logistic-analysis", "nameAr": "تحليل الأداء اللوجستي والتكلفة", "level": "متوسط", "resourceUrl": "" },
+      { "id": "excel-adv", "nameAr": "Excel متقدم وجداول محورية", "level": "متقدم", "resourceUrl": "https://support.microsoft.com" }
     ]
   }
 ]

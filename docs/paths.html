@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="مستكشف المسارات المهنية — اكتشف المسار المناسب لك مع ممتهن">
+  <meta name="description" content="مستكشف المسارات المهنية — اكتشف المسار المناسب والمهارات المطلوبة بالسوق السعودي لعام ٢٠٢٦ مع ممتهن">
   <title>المسارات المهنية — ممتهن</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/pages/paths.css">
 </head>
 <body>
+
+  <div id="scroll-progress" aria-hidden="true"></div>
 
   <nav class="nav is-scrolled" role="navigation" aria-label="القائمة الرئيسية">
     <div class="nav__inner">
@@ -39,14 +41,16 @@
     <a href="experts.html" class="nav__overlay-link">الخبراء</a>
     <a href="paths.html" class="nav__overlay-link">المسارات</a>
     <a href="about.html" class="nav__overlay-link">عن ممتهن</a>
+    <a href="faq.html" class="nav__overlay-link">الأسئلة الشائعة</a>
+    <a href="graduates.html#apply" class="btn btn-pill">سجّل اهتمامك</a>
   </div>
 
   <main>
     <section class="page-hero">
       <div class="container">
         <p class="section-label">مستكشف المسارات</p>
-        <h1 class="page-hero__title fade-up">٥ مسارات مهنية — <span class="text-lime">اختر مغامرتك</span></h1>
-        <p class="page-hero__subtitle fade-up">كل مسار مصمّم بالتعاون مع خبراء السوق السعودي — مهارات حقيقية، وظائف حقيقية.</p>
+        <h1 class="page-hero__title fade-up">٦ مسارات مهنية — <span class="text-lime">اختر مغامرتك</span></h1>
+        <p class="page-hero__subtitle fade-up">كل مسار مصمّم لتغطية المهارات الهجينة الأكثر طلباً في السوق السعودي لعام ٢٠٢٦.</p>
       </div>
     </section>
 
@@ -59,6 +63,7 @@
           <button class="path-filter-btn" data-filter="digital-marketing" data-color="#F59E0B" type="button">التسويق الرقمي</button>
           <button class="path-filter-btn" data-filter="ux-design" data-color="#EC4899" type="button">تصميم UX</button>
           <button class="path-filter-btn" data-filter="project-ops" data-color="#10B981" type="button">إدارة المشاريع</button>
+          <button class="path-filter-btn" data-filter="procurement-supply" data-color="#14B8A6" type="button">المشتريات وسلاسل الإمداد</button>
         </div>
         <div class="paths-grid" id="paths-grid" aria-live="polite"></div>
       </div>
@@ -76,19 +81,35 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <img src="assets/logo-inverse.svg" alt="ممتهن" width="140" height="40" loading="lazy">
-          <p>جمعية غير ربحية تربط الخريجين بالشركات الناشئة.</p>
+          <img src="assets/logo-inverse.svg" alt="ممتهن — من خريج إلى ممتهن" width="140" height="40" loading="lazy">
+          <p>ممتهن — مبادرة مهنية سعودية تربط الخريجين والشركات الناشئة.</p>
           <div class="footer__social">
             <a href="#" aria-label="تويتر"><i class="ph ph-x-logo"></i></a>
             <a href="#" aria-label="لينكدإن"><i class="ph ph-linkedin-logo"></i></a>
             <a href="#" aria-label="إنستغرام"><i class="ph ph-instagram-logo"></i></a>
           </div>
         </div>
-        <div><h4 class="footer__col-title">للخريجين</h4><a href="graduates.html" class="footer__link">كيف تنضم</a><a href="paths.html" class="footer__link">المسارات</a></div>
-        <div><h4 class="footer__col-title">للشركات</h4><a href="startups.html" class="footer__link">انضم كشريك</a></div>
-        <div><h4 class="footer__col-title">روابط سريعة</h4><a href="about.html" class="footer__link">عن ممتهن</a><a href="faq.html" class="footer__link">الأسئلة الشائعة</a></div>
+        <div>
+          <h4 class="footer__col-title">للخريجين</h4>
+          <a href="graduates.html" class="footer__link">كيف تنضم</a>
+          <a href="paths.html" class="footer__link">المسارات المهنية</a>
+          <a href="graduates.html#skill-gap" class="footer__link">تحليل فجوة المهارات</a>
+        </div>
+        <div>
+          <h4 class="footer__col-title">للشركات</h4>
+          <a href="startups.html" class="footer__link">انضم كشريك</a>
+          <a href="startups.html#apply" class="footer__link">طلب شراكة</a>
+        </div>
+        <div>
+          <h4 class="footer__col-title">روابط سريعة</h4>
+          <a href="about.html" class="footer__link">عن ممتهن</a>
+          <a href="experts.html" class="footer__link">للخبراء</a>
+          <a href="faq.html" class="footer__link">الأسئلة الشائعة</a>
+        </div>
       </div>
-      <div class="footer__bottom">© 2025 ممتهن | جمعية غير ربحية مرخّصة في المملكة العربية السعودية</div>
+      <div class="footer__bottom">
+        ممتهن — مبادرة مهنية سعودية
+      </div>
     </div>
   </footer>
 

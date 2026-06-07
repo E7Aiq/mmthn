@@ -5,13 +5,19 @@
   inset-inline: 0;
   z-index: 1000;
   height: var(--nav-height);
-  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .nav.is-scrolled {
   background: rgba(42, 42, 56, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(198, 241, 53, 0.08);
+}
+
+.nav.nav--hidden {
+  transform: translateY(-100%);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), background 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 .nav__inner {
@@ -241,12 +247,15 @@
   border: 1px solid var(--color-mist);
   border-radius: var(--radius-md);
   overflow: hidden;
-  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s, border-color 0.25s;
+  /* 3D tilt — transform is applied by JS via inline styles */
+  transform-style: preserve-3d;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.08s linear;
+  will-change: transform;
 }
 
 .path-card:hover {
-  transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
+  border-color: rgba(198, 241, 53, 0.3);
 }
 
 .path-card__icon {
@@ -299,6 +308,9 @@
   border: 1px solid var(--color-mist);
   border-radius: var(--radius-md);
   text-align: center;
+  transform-style: preserve-3d;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.08s linear;
+  will-change: transform;
 }
 
 .benefit-card__icon {
@@ -603,39 +615,100 @@
   text-align: center;
 }
 
-/* Form elements */
+/* ── Form elements — Premium floating label ── */
 .form-group {
-  margin-block-end: var(--space-lg);
+  position: relative;
+  margin-block-end: 1.75rem;
 }
 
-.form-label {
-  display: block;
+/* Floating label */
+.form-group label.form-label {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  left: auto;
+  transform: translateY(-50%);
   font-size: var(--text-sm);
-  font-weight: 600;
-  margin-block-end: var(--space-sm);
+  font-weight: 500;
+  color: var(--color-fog);
+  pointer-events: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  background: transparent;
+  padding: 0 0.25rem;
+  transform-origin: right center;
+  line-height: 1;
+  white-space: nowrap;
+  z-index: 1;
 }
 
+/* For textarea, label starts at top */
+.form-group:has(textarea) label.form-label {
+  top: 1.1rem;
+  transform: none;
+}
+
+/* Upgraded inputs */
 .form-input,
 .form-select,
 .form-textarea {
   width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--color-mist);
-  border-radius: var(--radius-sm);
-  background: var(--color-surface);
-  transition: border-color var(--transition-fast);
+  padding: 1rem;
+  background: transparent;
+  border: 1.5px solid color-mix(in srgb, var(--color-ink) 20%, transparent);
+  border-radius: 12px;
+  font-size: 1rem;
+  color: var(--color-ink);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  font-family: var(--font-arabic);
 }
 
 .form-input:focus,
-.form-select:focus,
 .form-textarea:focus {
-  outline: none;
   border-color: var(--color-lime);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-lime) 15%, transparent);
+  outline: none;
+}
+
+.form-select:focus {
+  border-color: var(--color-lime);
+  outline: none;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-lime) 15%, transparent);
+}
+
+/* Label floats up when focused or filled */
+.form-group input:focus ~ label.form-label,
+.form-group input:not(:placeholder-shown) ~ label.form-label,
+.form-group textarea:focus ~ label.form-label,
+.form-group textarea:not(:placeholder-shown) ~ label.form-label {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 0.72rem;
+  color: var(--color-lime);
+  background: var(--color-parchment);
+}
+
+/* Select: always show floated label since it can't use :placeholder-shown */
+.form-group:has(select) label.form-label {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 0.72rem;
+  color: var(--color-fog);
+  background: var(--color-parchment);
+}
+
+.form-group:has(select:focus) label.form-label {
+  color: var(--color-lime);
+}
+
+/* Valid state subtle indicator */
+.form-group input:valid:not(:placeholder-shown):not(:focus) {
+  border-color: color-mix(in srgb, var(--color-lime) 60%, transparent);
 }
 
 .form-textarea {
-  min-height: 120px;
+  min-height: 130px;
   resize: vertical;
+  padding-top: 1rem;
 }
 
 /* Checkbox */
@@ -692,4 +765,163 @@ mark {
   color: var(--color-ink);
   padding: 0 2px;
   border-radius: 2px;
+}
+
+.hero-image-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-image-col {
+    display: none;
+  }
+}
+
+/* ── Scroll Progress Bar (Task 7) ── */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--color-lime);
+  z-index: 9999;
+  transition: width 0.08s linear;
+  box-shadow: 0 0 8px color-mix(in srgb, var(--color-lime) 60%, transparent);
+  pointer-events: none;
+}
+
+/* ── Success State (Task 6) ── */
+.success-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 2rem;
+  gap: 1.25rem;
+  animation: successEntrance 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes successEntrance {
+  from { opacity: 0; transform: scale(0.8) translateY(20px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.success-state__ring {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--color-lime);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: ringPulse 2s ease-in-out infinite;
+}
+
+@keyframes ringPulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-lime) 40%, transparent); }
+  50%       { box-shadow: 0 0 0 16px transparent; }
+}
+
+.success-state__circle {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--color-lime);
+  color: var(--color-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
+}
+
+.success-state__circle svg {
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.success-state__title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-ink);
+  font-family: var(--font-arabic);
+}
+
+.success-state__subtitle {
+  color: var(--color-fog);
+  font-size: 1.1rem;
+  max-width: 360px;
+  line-height: 1.7;
+  font-family: var(--font-arabic);
+}
+
+.success-state__divider {
+  width: 48px;
+  height: 3px;
+  background: var(--color-lime);
+  border-radius: 99px;
+  margin: 0.5rem 0;
+}
+
+.success-state__note {
+  font-size: 0.9rem;
+  color: var(--color-fog);
+  opacity: 0.7;
+  font-family: var(--font-arabic);
+}
+
+/* ── Already Submitted (Task 8) ── */
+.already-submitted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  gap: 1rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.already-submitted__icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-lime) 15%, transparent);
+  border: 2px solid var(--color-lime);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--color-lime);
+}
+
+.already-submitted h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: var(--font-arabic);
+}
+
+.already-submitted p {
+  color: var(--color-fog);
+  font-family: var(--font-arabic);
+  font-size: 1rem;
+  line-height: 1.7;
 }
