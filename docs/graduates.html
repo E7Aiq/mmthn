@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="للخريجين — ابنِ مسيرتك المهنية وضاعف خبرتك العملية مع ممتهن">
+  <title>للخريجين — ممتهن</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=IBM+Plex+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/graduates.css">
+</head>
+<body>
+
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <nav class="nav is-scrolled" role="navigation" aria-label="القائمة الرئيسية">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="assets/logo-inverse.svg" alt="ممتهن" width="140" height="40"></a>
+      <div class="nav__links">
+        <a href="graduates.html" class="nav__link is-active">الخريجون</a>
+        <a href="startups.html" class="nav__link">الشركات</a>
+        <a href="experts.html" class="nav__link">الخبراء</a>
+        <a href="paths.html" class="nav__link">المسارات</a>
+        <a href="about.html" class="nav__link">عن ممتهن</a>
+      </div>
+      <div class="nav__actions">
+        <a href="#apply" class="btn btn-pill btn-sm">سجّل اهتمامك</a>
+        <button class="nav__toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__overlay" aria-hidden="true">
+    <a href="graduates.html" class="nav__overlay-link">الخريجون</a>
+    <a href="startups.html" class="nav__overlay-link">الشركات</a>
+    <a href="experts.html" class="nav__overlay-link">الخبراء</a>
+    <a href="paths.html" class="nav__overlay-link">المسارات</a>
+    <a href="about.html" class="nav__overlay-link">عن ممتهن</a>
+    <a href="faq.html" class="nav__overlay-link">الأسئلة الشائعة</a>
+    <a href="graduates.html#apply" class="btn btn-pill">سجّل اهتمامك</a>
+  </div>
+
+  <main>
+    <section class="page-hero page-hero--graduates">
+      <div class="container">
+        <p class="section-label">للخريجين</p>
+        <h1 class="page-hero__title fade-up">ابنِ مسيرتك المهنية من <span class="text-lime">اليوم الأول</span></h1>
+        <p class="page-hero__subtitle fade-up">في ٢٠٢٦، لم تعد السيرة الذاتية وحدها تكفي، ولا الشهادة الجامعية وحدها تكسر فلاتر التوظيف الآلية (ATS). ممتهن تساعدك على بناء تجربة عملية حقيقية.</p>
+        <a href="#apply" class="btn btn-primary fade-up" style="margin-block-start: 2rem">سجّل اهتمامك الآن</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-label fade-up">ماذا تحصل؟</p>
+        <h2 class="section-title fade-up">أربعة أشياء تغيّر مسارك</h2>
+        <div class="grid grid-4 stagger-children">
+          <div class="benefit-card fade-up" style="--i: 0">
+            <div class="benefit-card__icon"><i class="ph ph-folder-open"></i></div>
+            <h3 class="benefit-card__title">خبرة عملية حقيقية</h3>
+            <p class="benefit-card__desc">مشاريع ومهام فعلية في شركات ناشئة، خالية من الروتين المكتبي.</p>
+          </div>
+          <div class="benefit-card fade-up" style="--i: 1">
+            <div class="benefit-card__icon"><i class="ph ph-certificate"></i></div>
+            <h3 class="benefit-card__title">أثر قابل للقياس</h3>
+            <p class="benefit-card__desc">أرقام وإنجازات حقيقية تصقل سيرتك الذاتية وتجذب مسؤولي التوظيف.</p>
+          </div>
+          <div class="benefit-card fade-up" style="--i: 2">
+            <div class="benefit-card__icon"><i class="ph ph-chalkboard-teacher"></i></div>
+            <h3 class="benefit-card__title">توجيه مهني متواصل</h3>
+            <p class="benefit-card__desc">متابعة أسبوعية من خبير ممارس يوجهك لتحقيق أقصى استفادة.</p>
+          </div>
+          <div class="benefit-card fade-up" style="--i: 3">
+            <div class="benefit-card__icon"><i class="ph ph-star"></i></div>
+            <h3 class="benefit-card__title">وعي بسوق العمل</h3>
+            <p class="benefit-card__desc">فهم عميق لحقوقك وواجباتك، ومسارات التوطين والفرص الواعدة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--color-surface)">
+      <div class="container">
+        <p class="section-label fade-up">أنواع العقود</p>
+        <h2 class="section-title fade-up">اختر المدة المناسبة لك</h2>
+        <div class="contract-cards stagger-children">
+          <div class="contract-card fade-up" style="--i: 0">
+            <div class="contract-card__duration">شهر</div>
+            <div class="contract-card__label">فترة استكشافية</div>
+            <ul class="contract-card__list">
+              <li>تعرّف على بيئة الشركات الناشئة</li>
+              <li>مشروع استكشافي واحد موثّق</li>
+              <li>جلسات إرشاد مهني أسبوعية</li>
+              <li>فهم متطلبات العمل الأساسية</li>
+            </ul>
+          </div>
+          <div class="contract-card contract-card--featured fade-up" style="--i: 1">
+            <div class="contract-card__duration">٣ أشهر</div>
+            <div class="contract-card__label">التمكين والتطبيق</div>
+            <ul class="contract-card__list">
+              <li>تكامل مع الفريق ومسؤوليات واضحة</li>
+              <li>مشاريع حقيقية تضاف لمعرض الأعمال</li>
+              <li>إشراف أسبوعي مكثف من خبير</li>
+              <li>صياغة إنجازاتك بلغة الأرقام والأثر</li>
+            </ul>
+          </div>
+          <div class="contract-card fade-up" style="--i: 2">
+            <div class="contract-card__duration">٦ أشهر</div>
+            <div class="contract-card__label">تطوير وتوصية</div>
+            <ul class="contract-card__list">
+              <li>بناء قدرات متقدمة وخبرة يعتمد عليها</li>
+              <li>مشاريع معقدة وحلول تشغيلية</li>
+              <li>توجيه مهني مستمر وتوصية توظيف</li>
+              <li>رفع الجاهزية للفرص والشركات الكبرى</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Guidelines -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">دليل توعوي</p>
+        <h2 class="section-title">كيف تتجاوز تحديات التوظيف الحديثة؟</h2>
+        <div class="grid grid-3 stagger-children">
+          <div class="benefit-card fade-up" style="--i: 0; text-align: start;">
+            <h3 class="benefit-card__title">فك شفرة أنظمة التوظيف (ATS)</h3>
+            <p class="benefit-card__desc" style="line-height: 1.6;">سيرتك الذاتية تمر عبر أنظمة تتبع آلية تفلتر المتقدمين. لتجاوزها: ركّز على تضمين الكلمات المفتاحية الحقيقية المأخوذة من إعلانات الوظائف، تجنّب التصاميم المعقدة والجداول، واكتب إنجازاتك بلغة الأرقام والأثر.</p>
+          </div>
+          <div class="benefit-card fade-up" style="--i: 1; text-align: start;">
+            <h3 class="benefit-card__title">التدريب على رأس العمل (مثل تمهير)</h3>
+            <p class="benefit-card__desc" style="line-height: 1.6;">تمهير هو خيار حكومي وطني ممتاز لدخول سوق العمل. ممتهن لا تنافس تمهير، بل تعدّك وتجهّزك بمهارات عملية حقيقية في بيئات ريادية مرنة لتكون الخيار الأكثر جاذبية عند تقديمك عليه أو على الفرص الكبرى.</p>
+          </div>
+          <div class="benefit-card fade-up" style="--i: 2; text-align: start;">
+            <h3 class="benefit-card__title">الهندسة العكسية للمهارات</h3>
+            <p class="benefit-card__desc" style="line-height: 1.6;">لا تتعلم بشكل عشوائي. حدد المسمى الوظيفي المستهدف أولاً، اجمع ١٠ إعلانات وظيفية له، استخرج المهارات المشتركة الأكثر طلباً، ثم قس فجوتك وابدأ بتعلم المهارة الناقصة عبر أداة تحليل الفجوة أدناه.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      </div>
+    </section>
+
+    <section class="section" id="skill-gap">
+      <div class="container">
+        <p class="section-label fade-up">أداة تفاعلية</p>
+        <h2 class="section-title fade-up">حلّل فجوة مهاراتك</h2>
+        <p class="text-muted fade-up" style="margin-block-end: 2rem; max-width: 560px">اعرف بالضبط إيش عندك وإيش تحتاج قبل ما تبدأ — وخذ روابط تعلّم لكل مهارة ناقصة.</p>
+        <div class="skill-gap-tool fade-up" id="skill-gap-tool"></div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--color-surface)">
+      <div class="container">
+        <p class="section-label fade-up">خطوات التقديم</p>
+        <h2 class="section-title fade-up">من التسجيل إلى الشهادة</h2>
+        <div class="app-timeline stagger-children">
+          <div class="app-timeline__step fade-up" style="--i: 0">
+            <div class="app-timeline__number">١</div>
+            <div class="app-timeline__title">تسجيل البيانات واختيار المسار</div>
+            <p class="app-timeline__desc">عبّي نموذج التقديم أدناه وحدّد المسار والتطلعات بدقة</p>
+          </div>
+          <div class="app-timeline__step fade-up" style="--i: 1">
+            <div class="app-timeline__number">٢</div>
+            <div class="app-timeline__title">المطابقة والتنسيق</div>
+            <p class="app-timeline__desc">عند توفر فرصة مناسبة، نربطك بشركة ناشئة تناسب مهاراتك</p>
+          </div>
+          <div class="app-timeline__step fade-up" style="--i: 2">
+            <div class="app-timeline__number">٣</div>
+            <div class="app-timeline__title">بدء فترة التعاون</div>
+            <p class="app-timeline__desc">تبدأ العمل على مهام ومشاريع عملية في الشركة من اليوم الأول</p>
+          </div>
+          <div class="app-timeline__step fade-up" style="--i: 3">
+            <div class="app-timeline__number">٤</div>
+            <div class="app-timeline__title">التوجيه والمتابعة</div>
+            <p class="app-timeline__desc">تتواصل أسبوعياً مع خبير لتقييم تقدمك وتحسين جودة مخرجاتك</p>
+          </div>
+          <div class="app-timeline__step fade-up" style="--i: 4">
+            <div class="app-timeline__number">٥</div>
+            <div class="app-timeline__title">توثيق الإنجازات</div>
+            <p class="app-timeline__desc">تحول مشاريعك إلى نقاط قوة وتفاصيل قيّمة تضاف لسيرتك الذاتية</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apply">
+      <div class="container">
+        <p class="section-label fade-up">التسجيل</p>
+        <h2 class="section-title fade-up" style="text-align: center;">سجّل اهتمامك كخريج</h2>
+        <form class="application-form fade-up" style="max-width: 600px; margin-inline: auto;" id="graduate-form">
+          <div class="form-group">
+            <input class="form-input" type="text" id="full-name" name="full_name" required placeholder=" ">
+            <label class="form-label" for="full-name">الاسم الكامل</label>
+          </div>
+          <div class="form-group">
+            <input class="form-input" type="email" id="email" name="email" required placeholder=" ">
+            <label class="form-label" for="email">البريد الإلكتروني</label>
+          </div>
+          <div class="form-group">
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder=" ">
+            <label class="form-label" for="phone">رقم الجوال (اختياري)</label>
+          </div>
+          <div class="form-group">
+            <input class="form-input" type="text" id="major" name="specialization" required placeholder=" ">
+            <label class="form-label" for="major">التخصص الجامعي</label>
+          </div>
+          <div class="form-group">
+            <select class="form-select" id="preferred-path" name="path" required>
+              <option value="">— اختر المسار —</option>
+              <option value="data-ai">تحليل البيانات والذكاء الاصطناعي</option>
+              <option value="software-product">تطوير البرمجيات والمنتج</option>
+              <option value="digital-marketing">التسويق الرقمي والمحتوى</option>
+              <option value="ux-design">تصميم تجربة المستخدم</option>
+              <option value="project-ops">إدارة المشاريع والعمليات</option>
+              <option value="procurement-supply">المشتريات وسلاسل الإمداد</option>
+            </select>
+            <label class="form-label" for="preferred-path">المسار المفضّل</label>
+          </div>
+          <div class="form-group">
+            <input class="form-input" type="url" id="linkedin" name="linkedin_url" placeholder=" ">
+            <label class="form-label" for="linkedin">رابط LinkedIn أو معرض الأعمال (اختياري)</label>
+          </div>
+          <div class="form-group">
+            <textarea class="form-textarea" id="notes" name="message" placeholder=" "></textarea>
+            <label class="form-label" for="notes">ملاحظة حرة (ما الذي تبحث عنه من هذه التجربة؟)</label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%">إرسال الطلب</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="faq-graduates">
+      <div class="container">
+        <p class="section-label fade-up">أسئلة شائعة</p>
+        <h2 class="section-title fade-up">للخريجين</h2>
+        <div class="accordion fade-up" style="max-width: 800px">
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">هل تضمن ممتهن وظيفة للخريجين؟<i class="ph ph-caret-down accordion__icon"></i></button>
+            <div class="accordion__panel"><p class="accordion__content">لا تقدّم ممتهن وعود توظيف كاذبة. هدف المبادرة هو ردم فجوة المهارات ومساعدتك على بناء خبرة عملية حقيقية في شركة ناشئة تضاف لمعرض أعمالك وتدعم موقفك في المقابلات الوظيفية.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">ما الفرق بين ممتهن وبرامج تمهير؟<i class="ph ph-caret-down accordion__icon"></i></button>
+            <div class="accordion__panel"><p class="accordion__content">برنامج تمهير هو برنامج حكومي وطني رائع. ممتهن لا تنافس تمهير، بل تعتبر جسراً مرناً وخفيفاً يركز على بيئة الشركات الناشئة والريادية التي تتطلب سرعة تعلم وتجربة عملية لتجهيزك قبل التقديم على تمهير أو الفرص الكبرى.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">هل يجب أن أكون خريجاً حديثاً للانضمام؟<i class="ph ph-caret-down accordion__icon"></i></button>
+            <div class="accordion__panel"><p class="accordion__content">نعم، نستهدف الخريجين الجدد والشباب الباحثين عن فرصهم الأولى لبناء الخبرة العملية وتجاوز الفلاتر الآلية لأنظمة التوظيف (ATS).</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">كيف أستفيد من وثيقة العمل الحر مع ممتهن؟<i class="ph ph-caret-down accordion__icon"></i></button>
+            <div class="accordion__panel"><p class="accordion__content">تساعدك المبادرة على فهم كيفية استخراج وثيقة العمل الحر بشكل رسمي، وتدريبك على كيفية تنظيم أعمالك واستلام مهام حقيقية مع الشركات لبناء معرض أعمال موثّق قانونياً.</p></div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-block-start: 3rem">
+          <a href="faq.html" class="btn btn-secondary">المزيد من الأسئلة ←</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo-inverse.svg" alt="ممتهن — من خريج إلى ممتهن" width="140" height="40" loading="lazy">
+          <p>ممتهن — مبادرة مهنية سعودية تربط الخريجين والشركات الناشئة.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="تويتر"><i class="ph ph-x-logo"></i></a>
+            <a href="#" aria-label="لينكدإن"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" aria-label="إنستغرام"><i class="ph ph-instagram-logo"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title">للخريجين</h4>
+          <a href="graduates.html" class="footer__link">كيف تنضم</a>
+          <a href="paths.html" class="footer__link">المسارات المهنية</a>
+          <a href="graduates.html#skill-gap" class="footer__link">تحليل فجوة المهارات</a>
+        </div>
+        <div>
+          <h4 class="footer__col-title">للشركات</h4>
+          <a href="startups.html" class="footer__link">انضم كشريك</a>
+          <a href="startups.html#apply" class="footer__link">طلب شراكة</a>
+        </div>
+        <div>
+          <h4 class="footer__col-title">روابط سريعة</h4>
+          <a href="about.html" class="footer__link">عن ممتهن</a>
+          <a href="experts.html" class="footer__link">للخبراء</a>
+          <a href="faq.html" class="footer__link">الأسئلة الشائعة</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        ممتهن — مبادرة مهنية سعودية
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
+  <script defer src="js/skill-gap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <script type="module" src="./js/forms.js"></script>
+  <script>
+    // Task 8 — One submit per device
+    (function() {
+      var key = 'mumtahan_submitted_graduates';
+      if (localStorage.getItem(key)) {
+        var form = document.getElementById('graduate-form');
+        if (form) {
+          form.parentElement.innerHTML = '<div class="already-submitted"><div class="already-submitted__icon">✓</div><h3>تم تسجيلك مسبقاً</h3><p>لقد استلمنا طلبك وسنتواصل معك قريباً.</p></div>';
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
